@@ -1,0 +1,125 @@
+/* -- Theme controll panel --> Begin -- */
+
+#control_panel {
+	position: fixed;
+    top: 120px;
+    left: -220px;
+    z-index: 999;
+    padding: 25px 20px;
+    width: 180px;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+    background-color: #fafafa;
+    color: #3d3d3d;
+}
+
+	#control_panel > div > span {
+		display: block;
+		color: #3d3d3d;
+		font-weight: 700;
+		font-family: Arial;
+	}
+
+#control_panel ul {
+    overflow: hidden;
+	padding-bottom: 5px;
+}
+
+	#control_panel li {
+		float: left;
+		margin: 2px;
+	}
+
+		#control_panel li.active a {border-color: #000;}
+
+		#control_panel li a {
+			display: block;
+			width: 30px;
+			height: 30px;
+			text-indent: -9999px;
+			border: 1px solid #ababab;
+			-webkit-border-radius: 3px;
+			   -moz-border-radius: 3px;
+					border-radius: 3px;
+		}
+
+#control_panel .restore_button_wrapper {
+	clear: both;
+    padding: 10px 0 0 0;
+	text-align: center;
+}
+
+	#control_panel #restore_button {margin: 0;}
+
+	#control_label {
+		position: absolute;
+		top: 20px;
+		right: -31px;
+		width: 31px;
+		height: 30px;
+		-webkit-border-radius: 0 5px 5px 0;
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+		background: url(../images/theme-label.png) no-repeat 0 0 #fafafa;
+		-webkit-transition: all .25s linear;
+		-moz-transition: all .25s linear;
+		-o-transition: all .25s linear;
+		transition: all .25s linear;
+	}
+	
+.body_color_wrapper {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #b7b6b6
+}
+
+.style_block {
+	margin-bottom: 10px;
+}
+
+.style_block select {
+	margin: 2px 0;
+    padding: 3px;
+    width: 170px;
+    height: 25px;
+    border: 1px solid #b7b7b7 !important;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+			 border-radius: 0;
+	background-color:  #f9f9f9 !important;
+    -webkit-box-shadow: none !important;
+	   -moz-box-shadow: none !important;
+			box-shadow: none !important;
+    color: #010101 !important;
+    font-weight: normal;
+}
+
+.links_color_wrapper {padding: 0;}
+
+.body_color_wrapper > span {
+    float:left;
+	line-height: 2.3em;
+}
+
+.body_color_wrapper .bodyPicker {
+    position: relative;
+	float: right;
+    width: 24px;
+    height: 24px;
+	cursor: pointer;
+}
+
+.body_color_wrapper .bodyPicker:after {
+	position: absolute;
+	right: -4px;
+	bottom: -4px;
+	overflow: hidden;
+	width: 11px;
+	height: 11px;
+	background-image: url(../images/colorpicker_select.png);
+	background-repeat: no-repeat;
+	content: "";
+}
+
+/* -- Theme controll panel --> End -- */
