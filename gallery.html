@@ -3,14 +3,12 @@
 <!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
 <!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
-
-<!-- Mirrored from html.webtemplatemasters.com/blessing/gallery-3-columns-full-width.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 12:22:30 GMT -->
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<title>Blessing | Gallery 3 Columns Full Width</title>
+	<title>Gosim-Summit | About Us</title>
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -38,7 +36,8 @@
 			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->	
 			
 			<a href="index.html" id="logo">
-				<h1>Blessing</h1>
+		<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;"/>		
+				<!-- <h1>Blessing</h1> -->
 			</a><!--/ #logo-->	
 			
 			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
@@ -47,14 +46,49 @@
 			
 			<div class="event-holder clearfix">
 				<b>next event in:</b>
-				<span class="event-numbers">05</span>
-				<span class="event-text">days</span>
-				<span class="event-numbers">07</span>
-				<span class="event-text">hr</span>
-				<span class="event-numbers">25</span>
-				<span class="event-text">min</span>
-				<span class="event-numbers">35</span>
-				<span class="event-text">sec</span>
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Jul 14, 2025 00:00:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+					// Get today's date and time
+					var now = new Date().getTime();
+
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Display the result in the elements
+					document.getElementById("days").innerHTML = days;
+					document.getElementById("hours").innerHTML = hours;
+					document.getElementById("minutes").innerHTML = minutes;
+					document.getElementById("seconds").innerHTML = seconds;
+
+					// If the count down is over, write some text 
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("days").innerHTML = "0";
+						document.getElementById("hours").innerHTML = "0";
+						document.getElementById("minutes").innerHTML = "0";
+						document.getElementById("seconds").innerHTML = "0";
+					}
+				}, 1000);
+			</script>
+			<span id="days" class="event-numbers">05</span>
+			<span class="event-text">days</span>
+			<span id="hours" class="event-numbers">07</span>
+			<span class="event-text">hr</span>
+			<span id="minutes" class="event-numbers">25</span>
+			<span class="event-text">min</span>
+			<span id="seconds" class="event-numbers">35</span>
+			<span class="event-text">sec</span>
 			</div><!--/ .event-holder-->
 			
 			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
@@ -66,22 +100,9 @@
 			<nav id="navigation" class="navigation clearfix">
 
 				<ul class="clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="typography.html">Features</a>
-						<ul>
-							<li><a href="typography.html">Typography</a></li>
-							<li><a href="features-testimonials.html">Testimonials</a></li>
-							<li><a href="features-toggle.html">FAQ Toggle</a></li>
-							<li><a href="features-notifications.html">Notifications</a></li>
-							<li><a href="features-buttons.html">Buttons</a></li>
-							<li><a href="columns.html">Column Layout</a></li>
-							<li><a href="single-page-with-right-sidebar.html">Right Sidebar Page</a></li>
-							<li><a href="single-page-with-left-sidebar.html">Left Sidebar Page</a></li>
-							<li><a href="single-page-full-width.html">Full Width</a></li>
-							<li><a href="features-tabs.html">Tabs</a></li>
-						</ul>
-					</li>
-					<li><a href="staff.html">Staff</a></li>
+					<li ><a href="index.html">Home</a></li>
+					<li class="current-menu-item"><a href="about-us.html">About Us</a></li>
+          <li><a href="summit-information.html">Summit Information</a></li>
 					<li><a href="events.html">Events</a>
 						<ul>
 							<li><a href="events.html">Upcoming Events</a></li>
@@ -113,12 +134,12 @@
 							</li>
 						</ul>
 					</li>
-					<li class="current-menu-item"><a href="gallery-2-columns-full-width.html">Galleries</a>
+					<li><a href="gallery-2-columns-full-width.html">Galleries</a>
 						<ul>
-							<li class="current-menu-item"><a href="gallery-2-columns-full-width.html">Full Width</a>
+							<li><a href="gallery-2-columns-full-width.html">Full Width</a>
 								<ul>
 									<li><a href="gallery-2-columns-full-width.html">2 Columns</a></li>
-									<li class="current-menu-item"><a href="gallery-3-columns-full-width.html">3 Columns</a></li>
+									<li><a href="gallery-3-columns-full-width.html">3 Columns</a></li>
 									<li><a href="gallery-4-columns-full-width.html">4 Columns</a></li>
 								</ul>
 							</li>
@@ -163,7 +184,7 @@
 		
 		<div class="container">
 			
-			<h1>Gallery 3 Columns Full Width</h1>
+			<h1>Galleries</h1>
 			
 		</div><!--/ .container-->
 		
@@ -180,7 +201,7 @@
 		<div class="breadcrumbs">
 
 			<a title="Home" href="index.html">Home</a>
-			<span>Gallery 3 Columns Full Width</span>
+			<span>Gallery</span>
 
 		</div><!--/ .breadcrumbs-->	
 		
@@ -188,15 +209,7 @@
 		
 		<!-- - - - - - - - - Portfolio Filter - - - - - - - - - - - -->	
 			
-		<ul id="portfolio-filter" class="portfolio-filter">
-
-			<li><a data-categories="*">All</a></li>
-			<li><a data-categories="sermons">Sermons</a></li>
-			<li><a data-categories="people">People</a></li>
-			<li><a data-categories="spiritual">Spiritual Art</a></li>
-			<li><a data-categories="other">Other</a></li>
-
-		</ul><!--/ #portfolio-filter -->
+	
 		
 		<!-- - - - - - - - end Portfolio Filter - - - - - - - - - - -->	
 		
@@ -208,7 +221,7 @@
 					
 					<div class="bordered">
 						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/08.jpg"><img src="images/portfolio/thumbs/col3-1.jpg" alt="" /></a>
+							<a class="single-image picture-icon" rel="gallery" href="#"><img src="gosim_pics/img2.jpg" alt="" /></a>
 						</figure>
 					</div><!--/ .bordered-->
 					
@@ -222,7 +235,7 @@
 					
 					<div class="bordered">
 						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/12.jpg"><img src="images/portfolio/thumbs/col3-2.jpg" alt="" /></a>
+							<a class="single-image picture-icon" rel="gallery" href="#"><img src="gosim_pics/img5.jpg" alt="" /></a>
 						</figure>
 					</div><!--/ .bordered-->
 					
@@ -236,7 +249,7 @@
 					
 					<div class="bordered">
 						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/04.jpg"><img src="images/portfolio/thumbs/col3-3.jpg" alt="" /></a>
+							<a class="single-image picture-icon" rel="gallery" href="#"><img src="gosim_pics/pastor.jpg" alt="" /></a>
 						</figure>
 					</div><!--/ .bordered-->
 					
@@ -244,89 +257,9 @@
 
 			</article><!--/ .one-third-->
 
-			<article class="one-third column" data-categories="people other">
-				
-				<div class="project-thumb">
-					
-					<div class="bordered">
-						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/03.jpg"><img src="images/portfolio/thumbs/col3-4.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-					
-				</div><!--/ .project-thumb-->
+		
 
-			</article><!--/ .one-third-->
-
-			<article class="one-third column" data-categories="sermons people">
-				
-				<div class="project-thumb">
-					
-					<div class="bordered">
-						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/01.jpg"><img src="images/portfolio/thumbs/col3-5.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-					
-				</div><!--/ .project-thumb-->
-
-			</article><!--/ .one-third-->
-
-			<article class="one-third column" data-categories="spiritual other">
-				
-				<div class="project-thumb">
-					
-					<div class="bordered">
-						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/06.jpg"><img src="images/portfolio/thumbs/col3-6.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-					
-				</div><!--/ .project-thumb-->
-
-			</article><!--/ .one-third-->
-
-			<article class="one-third column" data-categories="sermons spiritual">
-				
-				<div class="project-thumb">
-					
-					<div class="bordered">
-						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/10.jpg"><img src="images/portfolio/thumbs/col3-7.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-					
-				</div><!--/ .project-thumb-->
-
-			</article><!--/ .one-third-->
-
-			<article class="one-third column" data-categories="people other">
-				
-				<div class="project-thumb">
-					
-					<div class="bordered">
-						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/05.jpg"><img src="images/portfolio/thumbs/col3-8.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-					
-				</div><!--/ .project-thumb-->
-
-			</article><!--/ .one-third-->
-
-			<article class="one-third column" data-categories="sermons people">
-				
-				<div class="project-thumb">
-					
-					<div class="bordered">
-						<figure class="add-border">
-							<a class="single-image picture-icon" rel="gallery" href="images/full/11.jpg"><img src="images/portfolio/thumbs/col3-9.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-					
-				</div><!--/ .project-thumb-->
-
-			</article><!--/ .one-third-->
+		
 
 		</section><!--/ #portfolio-items-->
 

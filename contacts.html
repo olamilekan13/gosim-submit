@@ -4,13 +4,12 @@
 <!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
 
-<!-- Mirrored from html.webtemplatemasters.com/blessing/contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 12:22:36 GMT -->
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<title>Blessing | Contacts</title>
+	<title>Gosim-Summit | Contacts</title>
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -38,26 +37,62 @@
 			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->	
 			
 			<a href="index.html" id="logo">
-				<h1>Blessing</h1>
-			</a><!--/ #logo-->	
+				<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;"/>		
+						<!-- <h1>Blessing</h1> -->
+					</a><!--/ #logo-->	
 			
 			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
 			
-			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->	
+				<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->	
 			
-			<div class="event-holder clearfix">
-				<b>next event in:</b>
-				<span class="event-numbers">05</span>
+				<div class="event-holder clearfix">
+					<b>next event in:</b>
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Feb 13, 2025 15:37:25").getTime();
+	
+					// Update the count down every 1 second
+					var x = setInterval(function() {
+	
+						// Get today's date and time
+						var now = new Date().getTime();
+	
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
+	
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	
+						// Display the result in the elements
+						document.getElementById("days").innerHTML = days;
+						document.getElementById("hours").innerHTML = hours;
+						document.getElementById("minutes").innerHTML = minutes;
+						document.getElementById("seconds").innerHTML = seconds;
+	
+						// If the count down is over, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("days").innerHTML = "0";
+							document.getElementById("hours").innerHTML = "0";
+							document.getElementById("minutes").innerHTML = "0";
+							document.getElementById("seconds").innerHTML = "0";
+						}
+					}, 1000);
+				</script>
+				<span id="days" class="event-numbers">05</span>
 				<span class="event-text">days</span>
-				<span class="event-numbers">07</span>
+				<span id="hours" class="event-numbers">07</span>
 				<span class="event-text">hr</span>
-				<span class="event-numbers">25</span>
+				<span id="minutes" class="event-numbers">25</span>
 				<span class="event-text">min</span>
-				<span class="event-numbers">35</span>
+				<span id="seconds" class="event-numbers">35</span>
 				<span class="event-text">sec</span>
-			</div><!--/ .event-holder-->
-			
-			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
+				</div><!--/ .event-holder-->
+				
+				<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
 			
 			<div class="clear"></div>
 			
@@ -185,8 +220,10 @@
 		</div><!--/ .breadcrumbs-->	
 		
 		<!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->	
-		
-		<div id="map" class="map"></div><!--/ #map-->
+<!-- 		
+		<div id="map" class="map"></div>/ #map -->
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504294.4436249739!2d-79.78283042514114!3d9.081945604170159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca8f1dbe80363%3A0xaba25df1f042c10e!2sPanama%20City%2C%20Panam%C3%A1%20Province%2C%20Panama!5e0!3m2!1sen!2sng!4v1738091655173!5m2!1sen!2sng" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		
 		<div class="nine columns">
 			
@@ -235,7 +272,7 @@
 				Address:   &nbsp;&nbsp;&nbsp;&nbsp; 12 Street, Los Angeles, CA, 94101 <br />
 				Phone:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   +1 800 123 4567 <br />
 				FAX:       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   +1 800 891 2345 <br />
-				Email:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; testmail@sitename.com 
+				Email:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Info@GOSIM-Summit.org
 			</span>
 			
 		</div><!--/ .seven .columns-->
@@ -403,7 +440,7 @@
 	<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->		
 
 <!-- GET JQUERY FROM THE GOOGLE APIS -->
-<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="jquery/1.8/jquery.min.js"></script>
 <!--[if lt IE 9]>
 	<script src="js/selectivizr-and-extra-selectors.min.js"></script>
 <![endif]-->
@@ -418,5 +455,4 @@
 <script src="changer/js/changer.js"></script>
 </body>
 
-<!-- Mirrored from html.webtemplatemasters.com/blessing/contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 12:22:37 GMT -->
 </html>
