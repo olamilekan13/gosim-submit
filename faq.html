@@ -3,14 +3,12 @@
 <!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
 <!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
-
-<!-- Mirrored from html.webtemplatemasters.com/blessing/features-toggle.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2025 12:22:16 GMT -->
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<title>Blessing | Toggle</title>
+	<title>Gosim-Summit | FAQ</title>
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -38,7 +36,8 @@
 			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->	
 			
 			<a href="index.html" id="logo">
-				<h1>Blessing</h1>
+		<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;"/>		
+				<!-- <h1>Blessing</h1> -->
 			</a><!--/ #logo-->	
 			
 			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
@@ -47,14 +46,49 @@
 			
 			<div class="event-holder clearfix">
 				<b>next event in:</b>
-				<span class="event-numbers">05</span>
-				<span class="event-text">days</span>
-				<span class="event-numbers">07</span>
-				<span class="event-text">hr</span>
-				<span class="event-numbers">25</span>
-				<span class="event-text">min</span>
-				<span class="event-numbers">35</span>
-				<span class="event-text">sec</span>
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Feb 13, 2025 15:37:25").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+					// Get today's date and time
+					var now = new Date().getTime();
+
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Display the result in the elements
+					document.getElementById("days").innerHTML = days;
+					document.getElementById("hours").innerHTML = hours;
+					document.getElementById("minutes").innerHTML = minutes;
+					document.getElementById("seconds").innerHTML = seconds;
+
+					// If the count down is over, write some text 
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("days").innerHTML = "0";
+						document.getElementById("hours").innerHTML = "0";
+						document.getElementById("minutes").innerHTML = "0";
+						document.getElementById("seconds").innerHTML = "0";
+					}
+				}, 1000);
+			</script>
+			<span id="days" class="event-numbers">05</span>
+			<span class="event-text">days</span>
+			<span id="hours" class="event-numbers">07</span>
+			<span class="event-text">hr</span>
+			<span id="minutes" class="event-numbers">25</span>
+			<span class="event-text">min</span>
+			<span id="seconds" class="event-numbers">35</span>
+			<span class="event-text">sec</span>
 			</div><!--/ .event-holder-->
 			
 			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
@@ -63,25 +97,12 @@
 			
 			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->	
 
-				<nav id="navigation" class="navigation clearfix">
+			<nav id="navigation" class="navigation clearfix">
 
 				<ul class="clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li class="current-menu-item"><a href="typography.html">Features</a>
-						<ul>
-							<li><a href="typography.html">Typography</a></li>
-							<li><a href="features-testimonials.html">Testimonials</a></li>
-							<li class="current-menu-item"><a href="features-toggle.html">FAQ Toggle</a></li>
-							<li><a href="features-notifications.html">Notifications</a></li>
-							<li><a href="features-buttons.html">Buttons</a></li>
-							<li><a href="columns.html">Column Layout</a></li>
-							<li><a href="single-page-with-right-sidebar.html">Right Sidebar Page</a></li>
-							<li><a href="single-page-with-left-sidebar.html">Left Sidebar Page</a></li>
-							<li><a href="single-page-full-width.html">Full Width</a></li>
-							<li><a href="features-tabs.html">Tabs</a></li>
-						</ul>
-					</li>
-					<li><a href="staff.html">Staff</a></li>
+					<li class="current-menu-item"><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="summit-information.html">Summit Information</a></li>
 					<li><a href="events.html">Events</a>
 						<ul>
 							<li><a href="events.html">Upcoming Events</a></li>
@@ -163,7 +184,7 @@
 		
 		<div class="container">
 			
-			<h1>Toggle</h1>
+			<h1>Frequently Asked Questions</h1>
 			
 		</div><!--/ .container-->
 		
@@ -180,7 +201,7 @@
 		<div class="breadcrumbs">
 
 			<a title="Home" href="index.html">Home</a>
-			<span>Toggle</span>
+			<span>FAQ</span>
 
 		</div><!--/ .breadcrumbs-->	
 		
@@ -195,14 +216,14 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Aenean varius aliquam ante</span>
+				<span class="trigger">When does the GOSIM Summit take place?</span>
 
 				<div class="toggle-container">
 					
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. 
+						The GOSIM Summit is held annually. The specific dates for each year’s event will be announced in advance, 
+						so be sure to check our website for updates.
+ 
 					</p>
 					
 				</div><!--/ .toggle-container--> 
@@ -211,21 +232,13 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Suspendisse aliquet gravida sagittis</span>
+				<span class="trigger">Who can attend the GOSIM Summit?</span>
 
 				<div class="toggle-container">
 
-					<div class="bordered alignleft">
-						<figure class="add-border">
-							<a href="#"><img src="images/temp/recent-img-1.jpg" alt="" /></a>
-						</figure>
-					</div><!--/ .bordered-->
-
-					<h5>Pellentesque condimentum</h5>
-
 					<p>
-						Etiam malesuada velit bibendum luctus. Donec sit amet orci augue, sed tristique eros. 
-						Nam ut dui sit amet risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in.					
+						The summit is open to anyone in ministry who desires to grow in the revelation of Jesus Christ. Whether you are a pastor, 
+						church leader, or someone involved in ministry work, you are welcome to join us.					
 					</p>
 					
 				</div><!--/ .toggle-container--> 
@@ -234,21 +247,16 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Praesent a est nisl integer ultricies</span>
+				<span class="trigger">Are there any fees associated with attending the summit?</span>
 
 				<div class="toggle-container">
 					
 					<p>
-						Donec nunc ipsum, loboris non convallis laoret amet hendrerit rutrum iaculis. Aliquam 
-						vitae odio elit. Nullam sed nisi ac arcu condimentum var ius. Etiam malesuada velit bibendum luctus. 							
+						There are no registration fees for the GOSIM Summit. However, 
+						attendees are responsible for their own hotel accommodations and any personal expenses related to 
+						activities outside of the event.
+						
 					</p>
-
-					<ul class="list type-1">
-						<li>Nullam a ligula justo, quis varius ante</li>
-						<li>Curabitur molestie, elit mattis tempus pharetra</li>
-						<li>Mauris nisl tristique sem, nec lobortis ligula nulla</li>
-						<li>Aliquam nec purus sit amet turpis</li>
-					</ul>	
 					
 				</div><!--/ .toggle-container--> 
 
@@ -256,22 +264,15 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Proin magna tellus</span>
+				<span class="trigger">Can children attend the summit?</span>
 
 				<div class="toggle-container">
 					
 					<p>
-						Donec nunc ipsum, loboris non convallis laoret amet hendrerit rutrum iaculis. Aliquam 
-						vitae odio elit. Nullam sed nisi ac arcu condimentum var ius. Etiam malesuada velit bibendum luctus. 							
+						Yes, children are welcome to attend the GOSIM Summit. However, parents are responsible for arranging childcare for their
+						 children during the event.
+							
 					</p>
-
-					<ul class="ordered type-1">
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Cconsectetur adipisicing elit eiusmod</li>
-						<li>Tempor incididunt ut labore</li>
-						<li>Curabitur molestie, elit mattisa</li>
-						<li>Mauris nisl tristique sem, lobortis</li>
-					</ul>
 					
 				</div><!--/ .toggle-container--> 
 
@@ -279,22 +280,30 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Nullam hendrerit blandit tincidunt</span>
+				<span class="trigger">What should I do if I have further questions about the summit?</span>
 
 				<div class="toggle-container">
 					
 					<p>
-						Donec nunc ipsum, loboris non convallis laoret amet hendrerit rutrum iaculis. Aliquam 
-						vitae odio elit. Nullam sed nisi ac arcu condimentum var ius. Etiam malesuada velit bibendum luctus. 							
+						If you have any additional questions or need more information, 
+						please feel free to contact our support team through the contact form on our website. We’re here to help!
+							
 					</p>
+				</div><!--/ .toggle-container--> 
 
-					<ul class="ordered type-2">
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Cconsectetur adipisicing elit eiusmod</li>
-						<li>Tempor incididunt ut labore</li>
-						<li>Curabitur molestie, elit mattisa</li>
-						<li>Mauris nisl tristique sem, lobortis</li>
-					</ul>
+			</div><!--/ .box-toggle-->
+			
+			<div class="box-toggle">
+
+				<span class="trigger">Will there be food provided during the summit?</span>
+
+				<div class="toggle-container">
+
+					<p>
+						Refreshments will be provided at the summit, but please note that meals will not be included. 
+						We encourage attendees to explore local dining options for their meals.
+ 							
+					</p>
 					
 				</div><!--/ .toggle-container--> 
 
@@ -302,21 +311,15 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Fusce ultrices commodo dolor</span>
+				<span class="trigger">Is there a schedule available for the summit?</span>
 
 				<div class="toggle-container">
-
+					
 					<p>
-						Donec nunc ipsum, loboris non convallis laoret amet hendrerit rutrum iaculis. Aliquam 
-						vitae odio elit. Nullam sed nisi ac arcu condimentum var ius. Etiam malesuada velit bibendum luctus. 							
+						Yes, a detailed schedule of events, including speakers and sessions, 
+						will be provided on our website prior to the summit. 
+						Be sure to check back for updates!	
 					</p>
-
-					<ul class="list type-3">
-						<li>Nullam a ligula justo, quis varius ante</li>
-						<li>Curabitur molestie, elit mattis tempus pharetra</li>
-						<li>Mauris nisl tristique sem, nec lobortis ligula nulla</li>
-						<li>Aliquam nec purus sit amet turpis</li>
-					</ul>	
 					
 				</div><!--/ .toggle-container--> 
 
@@ -324,44 +327,34 @@
 			
 			<div class="box-toggle">
 
-				<span class="trigger">Vivamus ultrices, urna vel vestibulum</span>
+				<span class="trigger">Can I volunteer at the summit?</span>
 
 				<div class="toggle-container">
 					
 					<p>
-						Donec nunc ipsum, loboris non convallis laoret amet hendrerit rutrum iaculis. Aliquam 
-						vitae odio elit. Nullam sed nisi ac arcu condimentum var ius. Etiam malesuada velit bibendum luctus. 							
+						Yes! We welcome volunteers who are interested in helping out at the summit. 
+						Please visit our website for more information on volunteer opportunities.
+ 							
 					</p>
 
-					<ul class="list type-7">
-						<li>Nullam a ligula justo, quis varius ante</li>
-						<li>Curabitur molestie, elit mattis tempus pharetra</li>
-						<li>Mauris nisl tristique sem, nec lobortis ligula nulla</li>
-						<li>Aliquam nec purus sit amet turpis</li>
-					</ul>	
-					
+
 				</div><!--/ .toggle-container--> 
 
 			</div><!--/ .box-toggle-->
-			
+
+
 			<div class="box-toggle">
 
-				<span class="trigger">Ut viverra dolor quis augue</span>
+				<span class="trigger">How can I stay updated on future summits?</span>
 
 				<div class="toggle-container">
 					
 					<p>
-						Donec nunc ipsum, loboris non convallis laoret amet hendrerit rutrum iaculis. Aliquam 
-						vitae odio elit. Nullam sed nisi ac arcu condimentum var ius. Etiam malesuada velit bibendum luctus. 							
+						To stay informed about future GOSIM Summits and other events, 
+						please subscribe to our newsletter on our website or follow us on our social media channels.
 					</p>
 
-					<ul class="list type-8">
-						<li>Nullam a ligula justo, quis varius ante</li>
-						<li>Curabitur molestie, elit mattis tempus pharetra</li>
-						<li>Mauris nisl tristique sem, nec lobortis ligula nulla</li>
-						<li>Aliquam nec purus sit amet turpis</li>
-					</ul>	
-					
+
 				</div><!--/ .toggle-container--> 
 
 			</div><!--/ .box-toggle-->
@@ -373,65 +366,7 @@
 		
 		<!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
 		
-		<!-- - - - - - - - - - - - - Sidebar - - - - - - - - - - - - - - - - - -->	
-		
-		<aside id="sidebar" class="one-third column">
 			
-			<div class="widget widget_search">
-				
-				<form action="https://html.webtemplatemasters.com/" method="post" id="searchform">
-					
-					<fieldset>
-						
-						<input type="text" />
-					
-						<button type="submit" title="Search">Search</button>	
-					
-					</fieldset>
-					
-				</form><!--/ #searchform-->
-				
-			</div><!--/ .widget-->
-			
-			<div class="widget widget_categories">
-				
-				<h3 class="widget-title">Features</h3>
-				
-				<ul>
-					<li><a href="typography.html">Typography</a></li>
-					<li><a href="features-testimonials.html">Testimonials</a></li>
-					<li><a href="features-toggle.html">FAQ Toggle</a></li>
-					<li><a href="features-notifications.html">Notifications</a></li>
-					<li><a href="features-buttons.html">Buttons</a></li>
-					<li><a href="columns.html">Column Layout</a></li>
-					<li><a href="single-page-with-right-sidebar.html">Right Sidebar Page</a></li>
-					<li><a href="single-page-with-left-sidebar.html">Left Sidebar Page</a></li>
-					<li><a href="single-page-full-width.html">Full Width</a></li>
-					<li><a href="features-tabs.html">Tabs</a></li>
-				</ul>
-				
-			</div><!--/ .widget-->
-			
-			<div class="widget widget_text">
-				
-				<h3 class="widget-title">About The Theme</h3>
-				
-				<div class="textwidget">
-					
-					<p>
-						 Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Nulla iaculis aliquet augue,
-						 eu varius purus sollicitudin eget. Donec tellus nunc, sollicitudin eu congue tempor,
-						 dapibus et metus. Fusce ac ipsum at magna accumsan scelerisque sed non dolor. Mauris
-						 consectetur laoreet feugiat. 
-					</p>
-					
-				</div><!--/ .textwidget-->
-
-			</div><!--/ .widget-->
-
-		</aside><!--/ #sidebar-->
-		
-		<!-- - - - - - - - - - - - - end Sidebar - - - - - - - - - - - - - - - -->				
 	
 			
 	</section><!--/ .main -->
@@ -596,7 +531,7 @@
 	<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->		
 
 <!-- GET JQUERY FROM THE GOOGLE APIS -->
-<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="jquery/1.8/jquery.min.js"></script>
 <!--[if lt IE 9]>
 	<script src="js/selectivizr-and-extra-selectors.min.js"></script>
 <![endif]-->
