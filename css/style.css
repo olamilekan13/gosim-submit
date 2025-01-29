@@ -2698,7 +2698,7 @@ article.entry:last-of-type {margin-bottom: 20px;}
 	position: relative;
 	padding: 65px 0 15px;
 	border-bottom: 1px solid #cccac2;
-	background-color: rgba(222,219,207,.7);
+	background-color: rgba(222,219,207,.9);
 }
 
 .ie7 #footer,
@@ -3076,6 +3076,7 @@ article.entry:last-of-type {margin-bottom: 20px;}
 			font-weight: 100;
 			font-size: 14px;
 			cursor: pointer;
+			font-weight: bold;
 		}
 		
 		.box-toggle .trigger {
