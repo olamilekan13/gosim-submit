@@ -45,54 +45,54 @@
 			
 				<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->	
 			
-				<div class="event-holder clearfix">
-					<b>next event in:</b>
-				<script>
-					// Set the date we're counting down to
-					var countDownDate = new Date("Feb 13, 2025 15:37:25").getTime();
-	
-					// Update the count down every 1 second
-					var x = setInterval(function() {
-	
-						// Get today's date and time
-						var now = new Date().getTime();
-	
-						// Find the distance between now and the count down date
-						var distance = countDownDate - now;
-	
-						// Time calculations for days, hours, minutes and seconds
-						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	
-						// Display the result in the elements
-						document.getElementById("days").innerHTML = days;
-						document.getElementById("hours").innerHTML = hours;
-						document.getElementById("minutes").innerHTML = minutes;
-						document.getElementById("seconds").innerHTML = seconds;
-	
-						// If the count down is over, write some text 
-						if (distance < 0) {
-							clearInterval(x);
-							document.getElementById("days").innerHTML = "0";
-							document.getElementById("hours").innerHTML = "0";
-							document.getElementById("minutes").innerHTML = "0";
-							document.getElementById("seconds").innerHTML = "0";
-						}
-					}, 1000);
-				</script>
-				<span id="days" class="event-numbers">05</span>
-				<span class="event-text">days</span>
-				<span id="hours" class="event-numbers">07</span>
-				<span class="event-text">hr</span>
-				<span id="minutes" class="event-numbers">25</span>
-				<span class="event-text">min</span>
-				<span id="seconds" class="event-numbers">35</span>
-				<span class="event-text">sec</span>
-				</div><!--/ .event-holder-->
-				
-				<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
+			<div class="event-holder clearfix">
+				<b>next event in:</b>
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Jul 14, 2025 00:00:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+					// Get today's date and time
+					var now = new Date().getTime();
+
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Display the result in the elements
+					document.getElementById("days").innerHTML = days;
+					document.getElementById("hours").innerHTML = hours;
+					document.getElementById("minutes").innerHTML = minutes;
+					document.getElementById("seconds").innerHTML = seconds;
+
+					// If the count down is over, write some text 
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("days").innerHTML = "0";
+						document.getElementById("hours").innerHTML = "0";
+						document.getElementById("minutes").innerHTML = "0";
+						document.getElementById("seconds").innerHTML = "0";
+					}
+				}, 1000);
+			</script>
+			<span id="days" class="event-numbers">05</span>
+			<span class="event-text">days</span>
+			<span id="hours" class="event-numbers">07</span>
+			<span class="event-text">hr</span>
+			<span id="minutes" class="event-numbers">25</span>
+			<span class="event-text">min</span>
+			<span id="seconds" class="event-numbers">35</span>
+			<span class="event-text">sec</span>
+			</div><!--/ .event-holder-->
+			
+			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
 			
 			<div class="clear"></div>
 			
@@ -102,83 +102,13 @@
 
 				<ul class="clearfix">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="typography.html">Features</a>
-						<ul>
-							<li><a href="typography.html">Typography</a></li>
-							<li><a href="features-testimonials.html">Testimonials</a></li>
-							<li><a href="features-toggle.html">FAQ Toggle</a></li>
-							<li><a href="features-notifications.html">Notifications</a></li>
-							<li><a href="features-buttons.html">Buttons</a></li>
-							<li><a href="columns.html">Column Layout</a></li>
-							<li><a href="single-page-with-right-sidebar.html">Right Sidebar Page</a></li>
-							<li><a href="single-page-with-left-sidebar.html">Left Sidebar Page</a></li>
-							<li><a href="single-page-full-width.html">Full Width</a></li>
-							<li><a href="features-tabs.html">Tabs</a></li>
-						</ul>
-					</li>
-					<li><a href="staff.html">Staff</a></li>
-					<li><a href="events.html">Events</a>
-						<ul>
-							<li><a href="events.html">Upcoming Events</a></li>
-							<li><a href="event-single.html">Single Event</a></li>
-						</ul>
-					</li>
-					<li><a href="portfolio-1-column-full-width.html">Portfolio</a>
-						<ul>
-							<li><a href="portfolio-1-column-full-width.html">Full Width</a>
-								<ul>
-									<li><a href="portfolio-1-column-full-width.html">1 Column</a></li>
-									<li><a href="portfolio-2-columns-full-width.html">2 Columns</a></li>
-									<li><a href="portfolio-3-columns-full-width.html">3 Columns</a></li>
-								</ul>
-							</li>
-							<li><a href="portfolio-1-column-with-right-sidebar.html">With Sidebar</a>
-								<ul>
-									<li><a href="portfolio-1-column-with-right-sidebar.html">1 Column</a></li>
-									<li><a href="portfolio-2-columns-with-right-sidebar.html">2 Columns</a></li>
-								</ul>
-							</li>
-							<li><a href="portfolio-3-columns-full-width.html">With Filters</a></li>
-							<li><a href="portfolio-mixed.html">Mixed</a></li>
-							<li><a href="single-page-full-width.html">Single Page</a>
-								<ul>
-									<li><a href="single-page-full-width.html">Full Width</a></li>
-									<li><a href="single-page-with-right-sidebar.html">With Sidebar</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="gallery-2-columns-full-width.html">Galleries</a>
-						<ul>
-							<li><a href="gallery-2-columns-full-width.html">Full Width</a>
-								<ul>
-									<li><a href="gallery-2-columns-full-width.html">2 Columns</a></li>
-									<li><a href="gallery-3-columns-full-width.html">3 Columns</a></li>
-									<li><a href="gallery-4-columns-full-width.html">4 Columns</a></li>
-								</ul>
-							</li>
-							<li><a href="gallery-2-columns-with-right-sidebar.html">With Sidebar</a>
-								<ul>
-									<li><a href="gallery-2-columns-with-right-sidebar.html">2 Columns</a></li>
-								</ul>
-							</li>
-							<li><a href="gallery-3-columns-full-width.html">With Filters</a></li>
-							<li><a href="gallery-mixed.html">Mixed</a></li>
-						</ul>
-					</li>
-					<li><a href="blog.html">News</a>
-						<ul>
-							<li><a href="blog.html">All News</a></li>
-							<li><a href="blog.html">Date Archives</a>
-								<ul>
-									<li><a href="blog.html">Year Archive</a></li>
-									<li><a href="blog.html">Month Archive</a></li>
-									<li><a href="blog.html">Day Archive</a></li>
-								</ul>
-							</li>
-							<li><a href="blog-single.html">Single Post</a></li>
-						</ul>
-					</li>
+					<li><a href="about-us.html">About Us</a></li>
+          <!-- <li><a href="summit-information.html">Summit Information</a></li> -->
+					<li><a href="registration.html">Registeration</a></li>
+					<li><a href="volunteer.html">Volunteer</a></li>
+					<li><a href="gallery.html">Galleries</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="donate.html">Donate</a></li>
 					<li class="current-menu-item"><a href="contacts.html">Contacts</a></li>
 				</ul>
 				
@@ -293,15 +223,14 @@
 				
 				<div class="widget widget_text">
 
-					<h3 class="widget-title">About Our Church</h3>
+					<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
 
 					<div class="textwidget">
 
-						<p>
-							Mollis malesuada primis in faucibus luctus ultrces posuere cubilia nis velit porttitor euismod 
-							pharetra interetiam laoreet gitis placerat magna sit amet massa posuere pretium. 
-						</p>
-						
+						<!-- <h1>
+							The Gathering of Sons in Ministry (GOSIM)
+						</h1>
+						 -->
 					</div><!--/ .textwidget-->
 
 				</div><!--/ .widget-->
@@ -309,15 +238,15 @@
 				<div class="widget widget_contacts">
 					
 					<div class="vcard">
-						<span class="contact street-address">Address: 12 Street, Los Angeles, CA, 94101</span>
-						<span class="contact tel">Phone:  +1 800 123 4567</span>
-						<span class="contact email">E-mail: testmail@sitename.com</span>						
+						<span class="contact street-address">Address: Panama City, Panama </span>
+						<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
+						<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>						
 					</div><!--/ .vcard-->
 					
 				</div><!--/ .widget-->
 				
-			   <div class="widget widget_social">
-				   
+				 <div class="widget widget_social">
+					 
 					<ul class="social-icons clearfix">
 						<li class="twitter"><a href="#">Twitter<span></span></a></li>
 						<li class="facebook"><a href="#">Facebook<span></span></a></li>
@@ -325,12 +254,12 @@
 						<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
 						<li class="rss"><a href="#">Rss<span></span></a></li>
 					</ul><!--/ .social-icons-->				   
-				   
-			   </div><!--/ .widget-->
+					 
+				 </div><!--/ .widget-->
 				
 			</div><!--/ .four-->
 			
-			<div class="four columns">
+			<!-- <div class="four columns">
 				
 				<div class="widget widget_recent_entries">
 
@@ -342,7 +271,7 @@
 								<figure class="add-border">
 									<a class="single-image" href="#"><img src="images/temp/recent-img-4.jpg" alt="" /></a>
 								</figure>
-							</div><!--/ .bordered-->
+							</div>
 							<h6><a href="#">Conseq uuntur magn</a></h6>
 							<div class="entry-meta">Sep, 15,  <a href="#">2 Comments</a></div>
 						</li>
@@ -351,7 +280,7 @@
 								<figure class="add-border">
 									<a class="single-image" href="#"><img src="images/temp/recent-img-5.jpg" alt="" /></a>
 								</figure>
-							</div><!--/ .bordered-->
+							</div>
 							<h6><a href="#">Gravida eget metus</a></h6>
 							<div class="entry-meta">Sep, 15,  <a href="#">2 Comments</a></div>
 						</li>
@@ -360,17 +289,18 @@
 								<figure class="add-border">
 									<a class="single-image" href="#"><img src="images/temp/recent-img-6.jpg" alt="" /></a>
 								</figure>
-							</div><!--/ .bordered-->
+							</div>
 							<h6><a href="#">Nulla vitae elit libero</a></h6>
 							<div class="entry-meta">Sep, 15,  <a href="#">2 Comments</a></div>
 						</li>
 					</ul>
 
-				</div><!--/ .widget-->				
-				
-			</div><!--/ .four-->
+				</div>
+			 
+			</div> -->
+			<!--/ .four-->
 			
-			<div class="four columns">
+			<!-- <div class="four columns">
 				
 				<div class="widget widget_nav_menu">
 
@@ -386,11 +316,12 @@
 						<li><a href="#">10 Color Variations</a></li>
 					</ul>
 
-				</div><!--/ .widget-->				
+				</div>			
 				
-			</div><!--/ .four-->
+			</div> -->
+			<!--/ .four-->
 			
-			<div class="four columns">
+			<!-- <div class="four columns">
 				
 				<div class="widget widget_contact_form">
 
@@ -415,9 +346,10 @@
 						
 					</form>
 
-				</div><!--/ .widget-->				
+				</div>			
 				
-			</div><!--/ .four-->
+			</div> -->
+			<!--/ .four-->
 			
 		</div><!--/ .container-->
 		
@@ -431,13 +363,22 @@
 		
 		<div class="container">
 			
-			<div class="copyright">Copyright © 2012  ·  ThemeMakers  ·  All rights reserved</div>
-			
+			<div class="copyright">Copyright © <span id="currentYear"></span> · Gosim-Summit · All rights reserved</div>
+
+			<script>
+				// Get the current year
+				const currentYear = new Date().getFullYear();
+				
+				// Insert the current year into the span element
+				document.getElementById('currentYear').textContent = currentYear;
+			</script>			
 		</div><!--/ .container-->
 		
 	</footer><!--/ #bottom-footer-->
 	
 	<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->		
+	
+	
 
 <!-- GET JQUERY FROM THE GOOGLE APIS -->
 <script src="jquery/1.8/jquery.min.js"></script>
