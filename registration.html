@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />	
 	
 	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script type="text/javascript" src="js/modernizr.custom.js"></script>
   <script type="text/javascript" src="/js/audio.js"> </script>
 
@@ -260,13 +261,15 @@
         <input class="form-check-input" type="checkbox" name="communications" id="communications">
         <label class="form-check-label" for="communications">I consent to receive communications regarding the summit and future events.</label>
       </div>
-
+        <!-- reCAPTCHA Widget -->
+    <div class="g-recaptcha" data-sitekey="6LdvNvIqAAAAAMyZJvvGF6wzligYk112IEVnS9SV"></div>
       <!-- Submit Button -->
       <button type="submit" class="btn btn-primary">Submit Registration</button>
     </form>
   <!-- </div> -->
 
-  
+  <!-- Load reCAPTCHA API -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
     // Show/hide group name field based on radio button selection
     document.querySelectorAll('input[name="group"]').forEach((radio) => {
