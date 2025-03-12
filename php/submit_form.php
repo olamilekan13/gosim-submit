@@ -1,13 +1,19 @@
 <?php
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Load .env file to hide reCAPTCHA secret key
+if (file_exists(__DIR__ . '/.env')) {
+    $env = parse_ini_file(__DIR__ . '/.env');
+    $recaptchaSecret = $env['RECAPTCHA_SECRET_KEY'] ?? '';
+} else {
+    die("Configuration file missing!");
+}
 
-     // reCAPTCHA verification
-     $recaptchaSecret = "6LdvNvIqAAAAAPupJbM7X5v9JtdTZtrgmTGj5-BE"; // Replace with your actual secret key
-     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
- 
-     $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
-     $responseData = json_decode($verifyResponse);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // reCAPTCHA verification
+    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+
+    // Verify the reCAPTCHA response with Google
+    $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
+    $responseData = json_decode($verifyResponse);
  
      if (!$responseData->success) {
          die("reCAPTCHA verification failed. Please try again.");
