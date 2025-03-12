@@ -1,5 +1,14 @@
 <?php
 
+
+// Load .env file to hide reCAPTCHA secret key
+if (file_exists(__DIR__ . '/.env')) {
+    $env = parse_ini_file(__DIR__ . '/.env');
+    $recaptchaSecret = $env['RECAPTCHA_SECRET_KEY'] ?? '';
+} else {
+    die("Configuration file missing!");
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // reCAPTCHA verification
     $recaptchaSecret = "6LdvNvIqAAAAAPupJbM7X5v9JtdTZtrgmTGj5-BE"; // Replace with your actual secret key
