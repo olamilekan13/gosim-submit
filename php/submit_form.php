@@ -1,6 +1,17 @@
 <?php
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+     // reCAPTCHA verification
+     $recaptchaSecret = "6LdvNvIqAAAAAPupJbM7X5v9JtdTZtrgmTGj5-BE"; // Replace with your actual secret key
+     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+ 
+     $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
+     $responseData = json_decode($verifyResponse);
+ 
+     if (!$responseData->success) {
+         die("reCAPTCHA verification failed. Please try again.");
+     }
     // Collect form data and prevent null errors
     $fullName = htmlspecialchars($_POST['fullName'] ?? '');
     $email = htmlspecialchars($_POST['email'] ?? '');
