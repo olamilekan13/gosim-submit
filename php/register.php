@@ -11,9 +11,9 @@ if (file_exists(__DIR__ . '/.env')) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // reCAPTCHA verification
-    $recaptchaSecret = "6LdvNvIqAAAAAPupJbM7X5v9JtdTZtrgmTGj5-BE"; // Replace with your actual secret key
     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
+    // Verify the reCAPTCHA response with Google
     $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
     $responseData = json_decode($verifyResponse);
 
