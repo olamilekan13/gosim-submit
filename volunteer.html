@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />	
 	
 	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 	<script type="text/javascript" src="js/modernizr.custom.js"></script>
   <script type="text/javascript" src="/js/audio.js"> </script>
 
@@ -309,10 +311,16 @@
               <input type="date" class="form-control" id="date" name="date" required>
           </div>
       </div>
+
+      <!-- reCAPTCHA Widget -->
+    <div class="g-recaptcha" data-sitekey="6LdvNvIqAAAAAMyZJvvGF6wzligYk112IEVnS9SV"></div>
   
       <!-- Submit Button -->
       <button type="submit" class="btn btn-primary submit-btn">Submit</button>
   </form>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 
    <script>
