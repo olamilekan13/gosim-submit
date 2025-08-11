@@ -2,142 +2,154 @@
 <!--[if IE 7]>					<html class="ie7 no-js" lang="en">     <![endif]-->
 <!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
 <!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form - GOSIM Summit</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/skeleton.css" media="screen" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form - GOSIM Summit</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/skeleton.css" media="screen" />
 	<link rel="stylesheet" href="css/style.css" media="screen" />
 	<link rel="stylesheet" href="css/mediaelementplayer.css" media="screen" />
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
-	
-	<!-- REVOLUTION BANNER CSS SETTINGS -->
-	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />	
-	
-	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
-				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script type="text/javascript" src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="/js/audio.js"> </script>
 
-   <!-- Custom CSS -->
-   <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .form-container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-    .form-container h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .form-container p {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #666;
-    }
-    .form-container label {
-      font-weight: bold;
-      color: #333;
-    }
-    .form-container .form-check-label {
-      font-weight: normal;
-    }
-    .form-container .btn-primary {
-      width: 100%;
-      padding: 10px;
-      font-size: 18px;
-    }
-  </style>
+	<!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+
+	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="/js/audio.js"> </script>
+
+	<!-- Custom CSS -->
+	<style>
+		body {
+			background-color: #f8f9fa;
+		}
+
+		.form-container {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 30px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.form-container h1 {
+			text-align: center;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		.form-container p {
+			text-align: center;
+			margin-bottom: 30px;
+			color: #666;
+		}
+
+		.form-container label {
+			font-weight: bold;
+			color: #333;
+		}
+
+		.form-container .form-check-label {
+			font-weight: normal;
+		}
+
+		.form-container .btn-primary {
+			width: 100%;
+			padding: 10px;
+			font-size: 18px;
+		}
+	</style>
 
 </head>
+
 <body class="color-1 h-style-1 text-1">
-	
-	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->	
-	
-  <header id="header">
-		
+
+	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
+	<header id="header">
+
 		<div class="container">
-			
-			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->	
-			
+
+			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->
+
 			<a href="index.html" id="logo">
-		<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;"/>		
+				<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;" />
 				<!-- <h1>Blessing</h1> -->
-			</a><!--/ #logo-->	
-			
+			</a>
+			<!--/ #logo-->
+
 			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
-			
-			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->	
-			
+
+			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->
+
 			<div class="event-holder clearfix">
 				<!-- <b>next event in:</b> -->
-			<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Jul 14, 2025 00:00:00").getTime();
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Jul 6, 2026 00:00:00").getTime();
 
-				// Update the count down every 1 second
-				var x = setInterval(function() {
+					// Update the count down every 1 second
+					var x = setInterval(function () {
 
-					// Get today's date and time
-					var now = new Date().getTime();
+						// Get today's date and time
+						var now = new Date().getTime();
 
-					// Find the distance between now and the count down date
-					var distance = countDownDate - now;
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
 
-					// Time calculations for days, hours, minutes and seconds
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					// Display the result in the elements
-					document.getElementById("days").innerHTML = days;
-					document.getElementById("hours").innerHTML = hours;
-					document.getElementById("minutes").innerHTML = minutes;
-					document.getElementById("seconds").innerHTML = seconds;
+						// Display the result in the elements
+						document.getElementById("days").innerHTML = days;
+						document.getElementById("hours").innerHTML = hours;
+						document.getElementById("minutes").innerHTML = minutes;
+						document.getElementById("seconds").innerHTML = seconds;
 
-					// If the count down is over, write some text 
-					if (distance < 0) {
-						clearInterval(x);
-						document.getElementById("days").innerHTML = "0";
-						document.getElementById("hours").innerHTML = "0";
-						document.getElementById("minutes").innerHTML = "0";
-						document.getElementById("seconds").innerHTML = "0";
-					}
-				}, 1000);
-			</script>
-			<span id="days" class="event-numbers">05</span>
-			<span class="event-text">days</span>
-			<span id="hours" class="event-numbers">07</span>
-			<span class="event-text">hr</span>
-			<span id="minutes" class="event-numbers">25</span>
-			<span class="event-text">min</span>
-			<span id="seconds" class="event-numbers">35</span>
-			<span class="event-text">sec</span>
-			</div><!--/ .event-holder-->
-			
-			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
-			
+						// If the count down is over, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("days").innerHTML = "0";
+							document.getElementById("hours").innerHTML = "0";
+							document.getElementById("minutes").innerHTML = "0";
+							document.getElementById("seconds").innerHTML = "0";
+						}
+					}, 1000);
+				</script>
+				<span id="days" class="event-numbers">05</span>
+				<span class="event-text">days</span>
+				<span id="hours" class="event-numbers">07</span>
+				<span class="event-text">hr</span>
+				<span id="minutes" class="event-numbers">25</span>
+				<span class="event-text">min</span>
+				<span id="seconds" class="event-numbers">35</span>
+				<span class="event-text">sec</span>
+			</div>
+			<!--/ .event-holder-->
+
+			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
+
 			<div class="clear"></div>
-			
-			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->	
 
-      <nav id="navigation" class="navigation clearfix">
+			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->
+
+			<nav id="navigation" class="navigation clearfix">
 
 				<ul class="clearfix">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about-us.html">About Us</a></li>
-          <li><a href="summit-information.html">Summit Information</a></li>
+					<li><a href="summit-information.html">Summit Information</a></li>
 					<li class="current-menu-item"><a href="registration.html">Register</a></li>
 					<li><a href="volunteer.html">Volunteer</a></li>
 					<!-- <li><a href="gallery.html">Gallery</a></li> -->
@@ -145,224 +157,248 @@
 					<li><a href="donate.html">Donate</a></li>
 					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
-				
-			</nav><!--/ #navigation-->
 
-			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->	
-			
-		</div><!--/ .container-->
-		
-	</header><!--/ #header-->
-	
-	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->	
-	
-	<!-- - - - - - - - - - - - - - Page Header - - - - - - - - - - - - - - - -->	
-   
-  
-  <section class="page-header">
-		
+			</nav>
+			<!--/ #navigation-->
+
+			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->
+
+		</div>
+		<!--/ .container-->
+
+	</header>
+	<!--/ #header-->
+
+	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - - Page Header - - - - - - - - - - - - - - - -->
+
+
+	<section class="page-header">
+
 		<div class="container">
-			
-			<h1> Registration Form</h1>
-			
-		</div><!--/ .container-->
-		
-	</section><!--/ .page-header-->
-	
-	<!-- - - - - - - - - - - - - end Page Header - - - - - - - - - - - - - - -->	
 
-	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->		
-		
-	<section class="main container sbr clearfix">	
-		
-		<!-- - - - - - - - - - Breadcrumbs - - - - - - - - - - - - -->		
-		
+			<h1> Registration Form</h1>
+
+		</div>
+		<!--/ .container-->
+
+	</section>
+	<!--/ .page-header-->
+
+	<!-- - - - - - - - - - - - - end Page Header - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->
+
+	<section class="main container sbr clearfix">
+
+		<!-- - - - - - - - - - Breadcrumbs - - - - - - - - - - - - -->
+
 		<div class="breadcrumbs">
 
 			<a title="Home" href="index.html">Home</a>
 			<span>Registration For</span>
 
-		</div><!--/ .breadcrumbs-->	
-		
-		<!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->	
-		
+		</div>
+		<!--/ .breadcrumbs-->
+
+		<!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->
+
 		<!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
-		 
-<section id="content" class="ten columns">
+
+		<section id="content" class="ten columns">
 
 
-  <!-- <div class="form-container"> -->
-    <h1>2025 Registration Form</h1>
-    <p>Thank you for your interest in attending the 2025 GOSIM Summit in Panama!<br>Please fill out the registration form below to secure your spot at this transformative event. Attendance is free!</p>
+			<!-- <div class="form-container"> -->
+			<h1>2026 Registration Form</h1>
+			<p>Thank you for your interest in attending the 2026 GOSIM Summit in Panama!<br>Please fill out the registration
+				form below to secure your spot at this transformative event. Attendance is free!</p>
 
-    <form method="POST" action="php/register.php">
-      <!-- Personal Information Section -->
-      <h3>Personal Information</h3>
-      <div class="mb-3">
-        <label for="fullName" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
-      </div>
-      <div class="mb-3">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
-      </div>
-      <div class="mb-3">
-        <label for="address" class="form-label">Address</label>
-        <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
-      </div>
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <label for="city" class="form-label">City</label>
-          <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" required>
-        </div>
-        <div class="col-md-6">
-          <label for="state" class="form-label">State/Province</label>
-          <input type="text" class="form-control" name="state" id="state" placeholder="Enter your state/province" required>
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="zip" class="form-label">Zip/Postal Code</label>
-        <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter your zip/postal code" required>
-      </div>
+			<form method="POST" action="php/register.php">
+				<!-- Personal Information Section -->
+				<h3>Personal Information</h3>
+				<div class="mb-3">
+					<label for="fullName" class="form-label">Full Name</label>
+					<input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name"
+						required>
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email Address</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address"
+						required>
+				</div>
+				<div class="mb-3">
+					<label for="phone" class="form-label">Phone Number</label>
+					<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+				</div>
+				<div class="mb-3">
+					<label for="address" class="form-label">Address</label>
+					<input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+				</div>
+				<div class="row mb-3">
+					<div class="col-md-6">
+						<label for="city" class="form-label">City</label>
+						<input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" required>
+					</div>
+					<div class="col-md-6">
+						<label for="state" class="form-label">State/Province</label>
+						<input type="text" class="form-control" name="state" id="state" placeholder="Enter your state/province"
+							required>
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="zip" class="form-label">Zip/Postal Code</label>
+					<input type="text" class="form-control" id="zip" name="zip" placeholder="Enter your zip/postal code" required>
+				</div>
 
-      <!-- Registration Details Section -->
-      <h3>Registration Details</h3>
-      <div class="mb-3">
-        <label for="hearAbout" class="form-label">How did you hear about the summit?</label>
-        <input type="text" class="form-control" name="hearAbout" id="hearAbout" placeholder="Enter how you heard about the summit" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Are you registering as part of a group?</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="group" id="groupYes" value="yes">
-          <label class="form-check-label" for="groupYes">Yes</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="group" id="groupNo" value="no" checked>
-          <label class="form-check-label" for="groupNo">No</label>
-        </div>
-      </div>
-      <div class="mb-3" id="groupNameField" style="display: none;">
-        <label for="groupName" class="form-label">If yes, please provide the name of your group or organization</label>
-        <input type="text" class="form-control" id="groupName" name="groupName" placeholder="Enter group/organization name">
-      </div>
+				<!-- Registration Details Section -->
+				<h3>Registration Details</h3>
+				<div class="mb-3">
+					<label for="hearAbout" class="form-label">How did you hear about the summit?</label>
+					<input type="text" class="form-control" name="hearAbout" id="hearAbout"
+						placeholder="Enter how you heard about the summit" required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Are you registering as part of a group?</label>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="group" id="groupYes" value="yes">
+						<label class="form-check-label" for="groupYes">Yes</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="group" id="groupNo" value="no" checked>
+						<label class="form-check-label" for="groupNo">No</label>
+					</div>
+				</div>
+				<div class="mb-3" id="groupNameField" style="display: none;">
+					<label for="groupName" class="form-label">If yes, please provide the name of your group or
+						organization</label>
+					<input type="text" class="form-control" id="groupName" name="groupName"
+						placeholder="Enter group/organization name">
+				</div>
 
-      <!-- Consent and Agreement Section -->
-      <h3>Consent and Agreement</h3>
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" name="terms" id="terms" required>
-        <label class="form-check-label" for="terms">I agree to the Terms and Conditions of the 2025 GOSIM Summit.</label>
-      </div>
-      <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" name="communications" id="communications">
-        <label class="form-check-label" for="communications">I consent to receive communications regarding the summit and future events.</label>
-      </div>
-        <!-- reCAPTCHA Widget -->
-    <div class="g-recaptcha" data-sitekey="6LdvNvIqAAAAAMyZJvvGF6wzligYk112IEVnS9SV"></div>
-      <!-- Submit Button -->
-      <button type="submit" class="btn btn-primary">Submit Registration</button>
-    </form>
-  <!-- </div> -->
+				<!-- Consent and Agreement Section -->
+				<h3>Consent and Agreement</h3>
+				<div class="form-check mb-3">
+					<input class="form-check-input" type="checkbox" name="terms" id="terms" required>
+					<label class="form-check-label" for="terms">I agree to the Terms and Conditions of the 2026 GOSIM
+						Summit.</label>
+				</div>
+				<div class="form-check mb-3">
+					<input class="form-check-input" type="checkbox" name="communications" id="communications">
+					<label class="form-check-label" for="communications">I consent to receive communications regarding the summit
+						and future events.</label>
+				</div>
+				<!-- reCAPTCHA Widget -->
+				<div class="g-recaptcha" data-sitekey="6LdvNvIqAAAAAMyZJvvGF6wzligYk112IEVnS9SV"></div>
+				<!-- Submit Button -->
+				<button type="submit" class="btn btn-primary">Submit Registration</button>
+			</form>
+			<!-- </div> -->
 
-  <!-- Load reCAPTCHA API -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script>
-    // Show/hide group name field based on radio button selection
-    document.querySelectorAll('input[name="group"]').forEach((radio) => {
-      radio.addEventListener('change', (e) => {
-        const groupNameField = document.getElementById('groupNameField');
-        groupNameField.style.display = e.target.value === 'yes' ? 'block' : 'none';
-      });
-    });
-  </script>
+			<!-- Load reCAPTCHA API -->
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			<script>
+				// Show/hide group name field based on radio button selection
+				document.querySelectorAll('input[name="group"]').forEach((radio) => {
+					radio.addEventListener('change', (e) => {
+						const groupNameField = document.getElementById('groupNameField');
+						groupNameField.style.display = e.target.value === 'yes' ? 'block' : 'none';
+					});
+				});
+			</script>
 
-<script>
-  document.querySelector('form').addEventListener('submit', function (e) {
-       e.preventDefault(); // Prevent the default form submission
- 
-     const formData = new FormData(this);
- 
-     fetch('php/register.php', {
-         method: 'POST',
-         body: formData
-     })
-     .then(response => response.text())
-     .then(data => {
-         alert(data); // Display the response from the server
-				 document.querySelector('form').reset()
+			<script>
+				document.querySelector('form').addEventListener('submit', function (e) {
+					e.preventDefault(); // Prevent the default form submission
 
-     })
-     .catch(error => {
-         console.error('Error:', error);
-     });
- });
-  </script>
-     
- 
+					const formData = new FormData(this);
 
-  
+					fetch('php/register.php', {
+							method: 'POST',
+							body: formData
+						})
+						.then(response => response.text())
+						.then(data => {
+							alert(data); // Display the response from the server
+							document.querySelector('form').reset()
 
-</section><!--/ #content-->
+						})
+						.catch(error => {
+							console.error('Error:', error);
+						});
+				});
+			</script>
 
-<!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
 
- 
-</section><!--/ .main -->
 
-<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->			
-  
 
-<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->	
-	
-<footer id="footer">
-		
-	<div class="container clearfix">
-		
-		<div class="four columns">
-			
-			<div class="widget widget_text">
 
-				<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
+		</section>
+		<!--/ #content-->
 
-				<div class="textwidget">
+		<!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
 
-					<!-- <h1>
+
+	</section>
+	<!--/ .main -->
+
+	<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->
+
+
+	<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+
+	<footer id="footer">
+
+		<div class="container clearfix">
+
+			<div class="four columns">
+
+				<div class="widget widget_text">
+
+					<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
+
+					<div class="textwidget">
+
+						<!-- <h1>
 						The Gathering of Sons in Ministry (GOSIM)
 					</h1>
 					 -->
-				</div><!--/ .textwidget-->
+					</div>
+					<!--/ .textwidget-->
 
-			</div><!--/ .widget-->
-			
-			<div class="widget widget_contacts">
-				
-				<div class="vcard">
-					<span class="contact street-address">Address: Panama City, Panama </span>
-					<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
-					<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>						
-				</div><!--/ .vcard-->
-				
-			</div><!--/ .widget-->
-			
-			 <div class="widget widget_social">
-				 
-				<ul class="social-icons clearfix">
-					<li class="twitter"><a href="#">Twitter<span></span></a></li>
-					<li class="facebook"><a href="#">Facebook<span></span></a></li>
-					<li class="dribble"><a href="#">Dribble<span></span></a></li>
-					<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
-					<li class="rss"><a href="#">Rss<span></span></a></li>
-				</ul><!--/ .social-icons-->				   
-				 
-			 </div><!--/ .widget-->
-			
-		</div><!--/ .four-->
-		
-		<!-- <div class="four columns">
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_contacts">
+
+					<div class="vcard">
+						<span class="contact street-address">Address: Panama City, Panama </span>
+						<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
+						<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>
+					</div>
+					<!--/ .vcard-->
+
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_social">
+
+					<ul class="social-icons clearfix">
+						<li class="twitter"><a href="#">Twitter<span></span></a></li>
+						<li class="facebook"><a href="#">Facebook<span></span></a></li>
+						<li class="dribble"><a href="#">Dribble<span></span></a></li>
+						<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
+						<li class="rss"><a href="#">Rss<span></span></a></li>
+					</ul>
+					<!--/ .social-icons-->
+
+				</div>
+				<!--/ .widget-->
+
+			</div>
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 			
 			<div class="widget widget_recent_entries">
 
@@ -401,9 +437,9 @@
 			</div>
 		 
 		</div> -->
-		<!--/ .four-->
-		
-		<!-- <div class="four columns">
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 			
 			<div class="widget widget_nav_menu">
 
@@ -422,9 +458,9 @@
 			</div>			
 			
 		</div> -->
-		<!--/ .four-->
-		
-		<!-- <div class="four columns">
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 			
 			<div class="widget widget_contact_form">
 
@@ -452,29 +488,31 @@
 			</div>			
 			
 		</div> -->
-		<!--/ .four-->
-		
-	</div><!--/ .container-->
-	
-</footer><!--/ #footer-->
+			<!--/ .four-->
 
-<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->	
-<!-- GET JQUERY FROM THE GOOGLE APIS -->
-<script src="jquery/1.8/jquery.min.js"></script>
- <!-- Bootstrap JS (Optional) -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
- 
-<!--[if lt IE 9]>
+		</div>
+		<!--/ .container-->
+
+	</footer>
+	<!--/ #footer-->
+
+	<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
+	<!-- GET JQUERY FROM THE GOOGLE APIS -->
+	<script src="jquery/1.8/jquery.min.js"></script>
+	<!-- Bootstrap JS (Optional) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+	<!--[if lt IE 9]>
 <script src="js/selectivizr-and-extra-selectors.min.js"></script>
 <![endif]-->
-<script src="js/respond.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.cycle.all.min.js"></script>
-<script src="js/mediaelement-and-player.min.js"></script>
-<script src="fancybox/jquery.fancybox.pack.js"></script>
-<script src="js/custom.js"></script>
-<!-- <script src="changer/js/changer.js"></script> -->
+	<script src="js/respond.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.cycle.all.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script src="changer/js/changer.js"></script> -->
 </body>
 
 </html>

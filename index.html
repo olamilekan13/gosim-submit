@@ -2,14 +2,19 @@
 <!--[if IE 7]>					<html class="ie7 no-js" lang="en">     <![endif]-->
 <!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
 <!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
+	<link
+		href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu'
+		rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<title>Gosim-Summit | Home</title>
-	
+
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut" href="images/favicon.html" />
@@ -18,146 +23,156 @@
 	<link rel="stylesheet" href="css/style.css" media="screen" />
 	<link rel="stylesheet" href="css/mediaelementplayer.css" media="screen" />
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
-	
+
 	<!-- REVOLUTION BANNER CSS SETTINGS -->
-	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />	
-	
+	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+
 	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
 	<script type="text/javascript" src="js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="/js/audio.js"> </script>
 </head>
+
 <body class="color-1 h-style-1 text-1">
-	
-	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->	
-	
+
+	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
 	<header id="header">
-		
+
 		<div class="container">
-			
-			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->	
-			
+
+			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->
+
 			<a href="index.html" id="logo">
-		<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;"/>		
+				<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;" />
 				<!-- <h1>Blessing</h1> -->
-			</a><!--/ #logo-->	
-			
+			</a>
+			<!--/ #logo-->
+
 			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
-			
-			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->	
-			
+
+			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->
+
 			<div class="event-holder clearfix">
 				<!-- <b>next event in:</b> -->
-			<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Jul 14, 2025 00:00:00").getTime();
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Jul 6, 2026 00:00:00").getTime();
 
-				// Update the count down every 1 second
-				var x = setInterval(function() {
+					// Update the count down every 1 second
+					var x = setInterval(function () {
 
-					// Get today's date and time
-					var now = new Date().getTime();
+						// Get today's date and time
+						var now = new Date().getTime();
 
-					// Find the distance between now and the count down date
-					var distance = countDownDate - now;
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
 
-					// Time calculations for days, hours, minutes and seconds
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					// Display the result in the elements
-					document.getElementById("days").innerHTML = days;
-					document.getElementById("hours").innerHTML = hours;
-					document.getElementById("minutes").innerHTML = minutes;
-					document.getElementById("seconds").innerHTML = seconds;
+						// Display the result in the elements
+						document.getElementById("days").innerHTML = days;
+						document.getElementById("hours").innerHTML = hours;
+						document.getElementById("minutes").innerHTML = minutes;
+						document.getElementById("seconds").innerHTML = seconds;
 
-					// If the count down is over, write some text 
-					if (distance < 0) {
-						clearInterval(x);
-						document.getElementById("days").innerHTML = "0";
-						document.getElementById("hours").innerHTML = "0";
-						document.getElementById("minutes").innerHTML = "0";
-						document.getElementById("seconds").innerHTML = "0";
-					}
-				}, 1000);
-			</script>
-			<span id="days" class="event-numbers">05</span>
-			<span class="event-text">days</span>
-			<span id="hours" class="event-numbers">07</span>
-			<span class="event-text">hr</span>
-			<span id="minutes" class="event-numbers">25</span>
-			<span class="event-text">min</span>
-			<span id="seconds" class="event-numbers">35</span>
-			<span class="event-text">sec</span>
-			</div><!--/ .event-holder-->
-			
-			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
-			
+						// If the count down is over, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("days").innerHTML = "0";
+							document.getElementById("hours").innerHTML = "0";
+							document.getElementById("minutes").innerHTML = "0";
+							document.getElementById("seconds").innerHTML = "0";
+						}
+					}, 1000);
+				</script>
+				<span id="days" class="event-numbers">05</span>
+				<span class="event-text">days</span>
+				<span id="hours" class="event-numbers">07</span>
+				<span class="event-text">hr</span>
+				<span id="minutes" class="event-numbers">25</span>
+				<span class="event-text">min</span>
+				<span id="seconds" class="event-numbers">35</span>
+				<span class="event-text">sec</span>
+			</div>
+			<!--/ .event-holder-->
+
+			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
+
 			<div class="clear"></div>
-			
-			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->	
+
+			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->
 
 			<nav id="navigation" class="navigation clearfix">
 
 				<ul class="clearfix">
 					<li class="current-menu-item"><a href="index.html">Home</a></li>
 					<li><a href="about-us.html">About Us</a></li>
-          <li><a href="hotel-reservartion.html">Hotel Reservation</a></li>
-					<li><a href="registration.html">Register</a></li>
+					<!-- <li><a href="summit-note.html">Summit Note</a></li>
+					<li><a href="extra-note.html">Extra Note</a></li> -->
 					<li><a href="volunteer.html">Volunteer</a></li>
-					<!-- <li><a href="gallery.html">Gallery</a></li> -->
+					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="faq.html">FAQ</a></li>
 					<li><a href="donate.html">Donate</a></li>
 					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
-				
-			</nav><!--/ #navigation-->
 
-			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->	
-			
-		</div><!--/ .container-->
-		
-	</header><!--/ #header-->
-	
-	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->	
-	
+			</nav>
+			<!--/ #navigation-->
 
-	<!-- - - - - - - - - - - - - Slider - - - - - - - - - - - - - - - -->	
-	
-	<div class="fullwidthbanner-container">	
-		
+			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->
+
+		</div>
+		<!--/ .container-->
+
+	</header>
+	<!--/ #header-->
+
+	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->
+
+
+	<!-- - - - - - - - - - - - - Slider - - - - - - - - - - - - - - - -->
+
+	<div class="fullwidthbanner-container">
+
 		<div class="fullwidthbanner">
-			
-			<ul>	
+
+			<ul>
 
 				<!-- FADE -->
-				<li data-transition="fade" data-slotamount="10"> 										
+				<li data-transition="fade" data-slotamount="10">
 
-					<img src="/gosim_pics/img6.jpg" alt=""  data-thumb="images/thumbs/thumb1.jpg">
-					
+					<img src="/gosim_pics/img6.jpg" alt="" data-thumb="images/thumbs/thumb1.jpg">
+
 					<!-- <div class="caption sfb" data-x="150" data-y="-50" data-speed="900" data-easing="easeOutSine" data-start="500"><img src="/gosim_pics/img1.jpg" alt=""></div> -->
 					<!-- <div class="caption lfr" data-x="365" data-y="20" data-speed="400" data-start="800"><img src="/gosim_pics/img1.jpg" alt=""></div> -->
-					<div class="caption sft big_black"  data-x="20" data-y="100" data-speed="900" data-start="1300" data-easing="easeOutBack" style="color: aliceblue;">GOSIM 2025
+					<div class="caption sft big_black" data-x="20" data-y="100" data-speed="900" data-start="1300"
+						data-easing="easeOutBack" style="color: aliceblue;">GOSIM 2026
 						Register today to secure your spot </div>
-					<div class="caption sft medium_black"  data-x="20" data-y="145" data-speed="900" data-start="1300" data-easing="easeOutBack" style="color: aliceblue;">Location: Panama City, Panama !</div>
-					<div class="caption sft small_text"  data-x="20" data-y="210" data-speed="900" data-start="1500" data-easing="easeOutBack" style="color: aliceblue;">Dates: July 14-18, 2025
+					<div class="caption sft medium_black" data-x="20" data-y="145" data-speed="900" data-start="1300"
+						data-easing="easeOutBack" style="color: aliceblue;">Location: Panama City, Panama !</div>
+					<div class="caption sft small_text" data-x="20" data-y="210" data-speed="900" data-start="1500"
+						data-easing="easeOutBack" style="color: aliceblue;">Dates: July 6-10, 2026
 					</div>
 					<!-- <div class="caption sfb" data-x="20" data-y="320" data-speed="750" data-start="1900" data-easing="easeOutExpo"><a class="button dark small" href="#">Learn More</a></div> -->
 				</li>
-								
+
 				<!-- SLIDEUP -->
-				<li data-transition="slideup" data-slotamount="7" data-thumb="images/thumbs/thumb2.jpg"> 
+				<li data-transition="slideup" data-slotamount="7" data-thumb="images/thumbs/thumb2.jpg">
 
 					<img src="/gosim_pics/img10.jpg" alt="">
-									
-					<div class="caption lft big_yellow_dark_back"  data-x="20" data-y="100" data-speed="400" data-start="1300" data-easing="easeOutExpo">Main Speaker: Pastor Bank Akinmola</div>
-					<!-- <div class="caption lft big_white_back"  data-x="20" data-y="146" data-speed="300" data-start="1550" data-easing="easeOutExpo">GOSIM 2025
+
+					<div class="caption lft big_yellow_dark_back" data-x="20" data-y="100" data-speed="400" data-start="1300"
+						data-easing="easeOutExpo">Main Speaker: Pastor Bank Akinmola</div>
+					<!-- <div class="caption lft big_white_back"  data-x="20" data-y="146" data-speed="300" data-start="1550" data-easing="easeOutExpo">GOSIM 2026
 						Register today to secure your spot</div>
 					<div class="caption sfb medium_text"  data-x="20" data-y="240" data-speed="800" data-start="1800" data-easing="easeOutBack">Lorem ipsum dolor consectetur adipiscing</div>
 					<div class="caption sfb medium_text"  data-x="20" data-y="276" data-speed="800" data-start="1800" data-easing="easeOutBack">nulla aliquet varius purus</div> -->
 				</li>
-				
+
 				<!-- SLIDELEFT -->
 				<!-- <li data-transition="slideleft" data-slotamount="15" data-thumb="images/thumbs/thumb3.jpg"> 
 					
@@ -165,7 +180,7 @@
 					
 					<div class="caption lft very_big_white"  data-x="80" data-y="300" data-speed="900" data-start="1200" data-easing="easeOutBack">choose your right way</div>	
 				</li> -->
-								
+
 				<!-- SLIDERIGHT -->
 				<!-- <li data-transition="slideright" data-slotamount="10" data-thumb="images/thumbs/thumb4.jpg"> 
 					
@@ -182,7 +197,7 @@
 					<div class="caption lft medium_text"  data-x="580" data-y="322" data-speed="300" data-start="2800" data-easing="easeOutBack">to your Slides</div>
 									
 				</li> -->
-					
+
 				<!-- SLIDEUP -->
 				<!-- <li data-transition="slideup" data-slotamount="15" data-thumb="images/thumbs/thumb5.jpg"> 
 					
@@ -192,108 +207,126 @@
 					<div class="caption lfr big_dark_back"  data-x="580" data-y="217" data-speed="500" data-start="2000" data-easing="easeOutBack">Responsive</div>
 					<div class="caption sfb big_dark_back"  data-x="580" data-y="269" data-speed="500" data-start="2350" data-easing="easeOutBack">Theme</div>
 				</li> -->
-								
+
 			</ul>
-			
-		</div><!--/ .fullwidthbanner-->	
-		
-	</div><!--/ .fullwidthbanner-container-->
+
+		</div>
+		<!--/ .fullwidthbanner-->
+
+	</div>
+	<!--/ .fullwidthbanner-container-->
 
 	<!-- - - - - - - - - - - - - end Slider - - - - - - - - - - - - - - -->
-	
 
-	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->		
-		
-	<section class="container">	
-		
+
+	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->
+
+	<section class="container">
+
 		<!-- - - - - - - - - - - - - Holder - - - - - - - - - - - - - - -->
-		
+
 		<section class="holder clearfix">
 
 			<div class="one-third column">
-				
+
 				<div class="detailimg">
-					
+
 					<div class="bordered">
 						<figure class="add-border">
-							<a class="single-image picture-icon" rel="holder" href="images/full/02.jpg"><img src="images/temp/temp-img-3.jpg" alt="" /></a>
+							<a class="single-image picture-icon" rel="holder" href="images/full/02.jpg"><img
+									src="images/temp/temp-img-3.jpg" alt="" /></a>
 						</figure>
-					</div><!--/ .bordered-->
-					
+					</div>
+					<!--/ .bordered-->
+
 					<h5>Registration</h5>
-					
+
 					<p>
-						Join us as we engage in meaningful discussions, participate in enriching workshops, and connect with fellow pastors and leaders who share your passion for serving Christ. Our time together will be filled with inspiration, encouragement, and the opportunity to forge lasting relationships within the body of Christ.
+						Join us as we engage in meaningful discussions, participate in enriching workshops, and connect with fellow
+						pastors and leaders who share your passion for serving Christ. Our time together will be filled with
+						inspiration, encouragement, and the opportunity to forge lasting relationships within the body of Christ.
 
 					</p>
-					
+
 					<a href="registration.html" class="button default">Register</a>
-					
-				</div><!--/ .detailimg-->
-				
-			</div><!--/ .one-third-->
-			
-		
-			
+
+				</div>
+				<!--/ .detailimg-->
+
+			</div>
+			<!--/ .one-third-->
+
+
+
 			<div class="one-third column">
-				
+
 				<div class="detailimg">
-					
+
 					<div class="bordered">
 						<figure class="add-border">
-							<a class="single-image picture-icon" rel="holder" href="images/full/08.jpg"><img src="images/temp/temp-img-2.jpg" alt="" /></a>
+							<a class="single-image picture-icon" rel="holder" href="images/full/08.jpg"><img
+									src="images/temp/temp-img-2.jpg" alt="" /></a>
 						</figure>
-					</div><!--/ .bordered-->
-					
+					</div>
+					<!--/ .bordered-->
+
 					<h5>Hotel Reservation</h5>
-					
+
 					<p>
 						Welcome to the GOSIM Summit Hotel Reservation Portal
-						Reserve Your Stay for the GOSIM Summit from July 14-18, 2025
+						Reserve Your Stay for the GOSIM Summit from July 6-10, 2026
 						We invite you to secure your accommodations for this exciting event.
 					</p>
-					
-					<a href="hotel-reservartion.html" class="button default"><b>Book Your Room</b></a>
-					
-				</div><!--/ .detailimg-->
-				
-			</div><!--/ .one-third-->
-			
+
+					<a href="#" class="button default"><b>Book Your Room</b></a>
+
+				</div>
+				<!--/ .detailimg-->
+
+			</div>
+			<!--/ .one-third-->
+
 			<div class="one-third column">
-				
+
 				<div class="detailimg">
-					
+
 					<div class="bordered">
 						<figure class="add-border">
-							<a class="single-image picture-icon" rel="holder" href="images/full/01.jpg"><img src="images/temp/temp-img-1.jpg" alt="" /></a>
+							<a class="single-image picture-icon" rel="holder" href="images/full/01.jpg"><img
+									src="images/temp/temp-img-1.jpg" alt="" /></a>
 						</figure>
-					</div><!--/ .bordered-->
-					
+					</div>
+					<!--/ .bordered-->
+
 					<h5>About Us</h5>
-					
+
 					<p>
-						We are thrilled to welcome you to the official website of the Gathering of Sons in Ministry (GOSIM)! Each year, we come together for a powerful summit dedicated to deepening our understanding of Christ-centered messages and providing practical support for effective ministry.
+						We are thrilled to welcome you to the official website of the Gathering of Sons in Ministry (GOSIM)! Each
+						year, we come together for a powerful summit dedicated to deepening our understanding of Christ-centered
+						messages and providing practical support for effective ministry.
 
 					</p>
-					
+
 					<a href="about-us.html" class="button default">Learn More</a>
-					
-				</div><!--/ .detailimg-->
-				
-			</div><!--/ .one-third-->
-			
+
+				</div>
+				<!--/ .detailimg-->
+
+			</div>
+			<!--/ .one-third-->
+
 			<div class="clear"></div>
 
 		</section>
 		<!--/ .holder-->
-		
+
 		<!-- - - - - - - - - - - - end Holder - - - - - - - - - - - - - -->
 
-		<!-- - - - - - - - - - - - - - - Bottom Sidebar - - - - - - - - - - - - - - - - -->	
+		<!-- - - - - - - - - - - - - - - Bottom Sidebar - - - - - - - - - - - - - - - - -->
 
 		<!-- <aside id="bottom-sidebar" class="clearfix"> -->
 
-			<!-- <div class="one-third column">
+		<!-- <div class="one-third column">
 				
 				<div class="widget widget_recent_entries">
 
@@ -310,9 +343,9 @@
 								</figure>
 
 							</div> -->
-							<!--/ .bordered-->
-							
-							<!-- <p>
+		<!--/ .bordered-->
+
+		<!-- <p>
 								Varius etiam malesuada bibeum donec sit amet orci augue tristique eros amet risus. 
 								Mollis malesuada ipsum primis in faucibus orci luctus.
 							</p>
@@ -326,10 +359,10 @@
 									<a class="single-image" href="#"><img src="images/temp/latest-img-2.jpg" alt="" /></a>
 								</figure> -->
 
-							<!-- </div> -->
-							<!--/ .bordered-->
-							
-							<!-- <p>
+		<!-- </div> -->
+		<!--/ .bordered-->
+
+		<!-- <p>
 								Mollis malesuada primis in faucibus luctus ultrces posuere cubilia nis velit
 								porttitor euismod pharetra interetiam laoreet gitis placerat magna sit amet
 								massa. 
@@ -338,12 +371,12 @@
 					</ul>
 
 				</div> -->
-				<!--/ .widget-->				
-				
-			<!-- </div> -->
-			<!--/ .one-third-->
-			
-			<!-- <div class="one-third column">
+		<!--/ .widget-->
+
+		<!-- </div> -->
+		<!--/ .one-third-->
+
+		<!-- <div class="one-third column">
 				
 				<div class="widget widget_upcoming_events">
 					
@@ -354,10 +387,10 @@
 							<div class="entry-meta">
 								<span class="date">27</span>
 								<span class="month">sep</span> -->
-							<!-- </div> -->
-							<!--/ .entry-meta-->
-							
-							<!-- <h6><a href="#">Present Est Nisl</a></h6>
+		<!-- </div> -->
+		<!--/ .entry-meta-->
+
+		<!-- <h6><a href="#">Present Est Nisl</a></h6>
 							<span class="place">New York, Empire State Building</span>
 							<span class="time">10:30 AM - 14:00 PM</span>
 						</li>
@@ -366,9 +399,9 @@
 								<span class="date">26</span>
 								<span class="month">sep</span>
 							</div> -->
-							<!--/ .entry-meta-->
-							
-							<!-- <h6><a href="#">Upcoming Event</a></h6>
+		<!--/ .entry-meta-->
+
+		<!-- <h6><a href="#">Upcoming Event</a></h6>
 							<span class="place">Los Angeles Olympic Stadium</span>
 							<span class="time">10:30 AM - 14:00 PM</span>
 						</li>
@@ -377,21 +410,21 @@
 								<span class="date">25</span>
 								<span class="month">sep</span>
 							</div> -->
-							<!--/ .entry-meta-->
-							
-							<!-- <h6><a href="#">Upcoming Event</a></h6>
+		<!--/ .entry-meta-->
+
+		<!-- <h6><a href="#">Upcoming Event</a></h6>
 							<span class="place">New York, Empire State Building</span>
 							<span class="time">10:30 AM - 14:00 PM</span>
 						</li>
 					</ul>
 					
 				</div> -->
-				<!--/ .widget-->
-				
-			<!-- </div> -->
-			<!--/ .one-third-->
-			
-			<!-- <div class="one-third column">
+		<!--/ .widget-->
+
+		<!-- </div> -->
+		<!--/ .one-third-->
+
+		<!-- <div class="one-third column">
 				
 				<div class="widget widget_audio">
 					
@@ -402,36 +435,36 @@
 					<span class="question">How to Open Your Soul to Jesus?</span>
 				
 				</div> -->
-				<!--/ .widget-->
-				
-				<!-- <div class="widget-divider"></div>
+		<!--/ .widget-->
+
+		<!-- <div class="widget-divider"></div>
 				
 				<div class="widget widget_video">
 					
 					<h3 class="widget-title">Featured Video</h3>
 					
 					<video width="300" height="160" style="width: 100%; height: 100%;" id="player1" poster="media/echo-hereweare.jpg" controls="controls" preload="none"> -->
-						<!-- MP4 source must come first for iOS -->
-						<!-- <source type="video/mp4" src="media/echo-hereweare.mp4" /> -->
-						<!-- WebM for Firefox 4 and Opera -->
-						<!-- <source type="video/webm" src="media/echo-hereweare.webm" /> -->
-						<!-- OGG for Firefox 3 -->
-						<!-- <source type="video/ogg" src="media/echo-hereweare.ogv" /> -->
-						<!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-						<!-- <object width="300" height="160" type="application/x-shockwave-flash" data="js/flashmediaelement.swf"> 		
+		<!-- MP4 source must come first for iOS -->
+		<!-- <source type="video/mp4" src="media/echo-hereweare.mp4" /> -->
+		<!-- WebM for Firefox 4 and Opera -->
+		<!-- <source type="video/webm" src="media/echo-hereweare.webm" /> -->
+		<!-- OGG for Firefox 3 -->
+		<!-- <source type="video/ogg" src="media/echo-hereweare.ogv" /> -->
+		<!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
+		<!-- <object width="300" height="160" type="application/x-shockwave-flash" data="js/flashmediaelement.swf"> 		
 							<param name="movie" value="js/flashmediaelement.swf" /> 
 							<param name="flashvars" value="controls=true&poster=media/echo-hereweare.jpg&file=media/echo-hereweare.mp4" /> 		 -->
-							<!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-							<!-- <img src="media/echo-hereweare.jpg" width="300" height="160" alt="Here we are" 
+		<!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
+		<!-- <img src="media/echo-hereweare.jpg" width="300" height="160" alt="Here we are" 
 								title="No video playback capabilities" />
 						</object> 	
 					</video>	 -->
-					
-				<!-- </div> -->
-				<!--/ .widget-->
-				
-			<!-- </div> -->
-			<!--/ .one-third-->
+
+		<!-- </div> -->
+		<!--/ .widget-->
+
+		<!-- </div> -->
+		<!--/ .one-third-->
 
 		<!-- </aside> -->
 		<!--/ #bottom-sidebar-->
@@ -441,135 +474,142 @@
 
 
 		<div class="column-divider"></div>
-		
-	<div class="sixteen columns">
-			
-		<h3>Transformational Understanding:</h3>
-	
-		<p>
-			Deepening the 
-			understanding of the Finished Work of Christ and its implications for 
-			personal lives and ministry, fostering a transformative faith that 
-			influences every aspect of life
-		</p>		
 
-	</div>
+		<div class="sixteen columns">
 
-	<div class="sixteen columns">
-			
-		<h3>Christ-Centered Messaging:</h3>
-	
-		<p>
-			Equipping leaders to 
-			communicate Christ-centered messages that resonate with their 
-			communities, promoting healing, restoration, and spiritual growth.
-		</p>		
+			<h3>Transformational Understanding:</h3>
 
-	</div>
+			<p>
+				Deepening the
+				understanding of the Finished Work of Christ and its implications for
+				personal lives and ministry, fostering a transformative faith that
+				influences every aspect of life
+			</p>
 
-	<div class="sixteen columns">
-			
-		<h3>Empowerment and Mentorship</h3>
-	
-		<p>
-			Providing mentorship and 
-			practical training that empowers participants to lead effectively, 
-			instilling confidence to enact change in their ministries and 
-			communities
-		</p>		
+		</div>
 
-	</div>
+		<div class="sixteen columns">
 
-	<div class="sixteen columns">
-			
-		<h3>Community Impact:</h3>
-	
-		<p>
-			Encouraging leaders to implement 
-			initiatives that reflect the love and grace of Christ, transforming their 
-			communities through acts of service and outreach.
-		</p>		
+			<h3>Christ-Centered Messaging:</h3>
 
-	</div>
+			<p>
+				Equipping leaders to
+				communicate Christ-centered messages that resonate with their
+				communities, promoting healing, restoration, and spiritual growth.
+			</p>
 
-	<div class="sixteen columns">
-			
-		<h3>Collaboration and Support: </h3>
-	
-		<p>
-			Building a supportive network 
-			of ministry leaders who collaborate, share resources, and encourage 
-			one another in their journeys of faith and leadership.
-			Through GOSIM, we are dedicated to raising leaders who are not only 
-			knowledgeable about the Finished Work of Christ but are also 
-			passionate about living out that truth in their ministries and 
-			communities, bringing about lasting transformation.
-			
-		</p>		
+		</div>
 
-	</div>
+		<div class="sixteen columns">
 
-		<!-- - - - - - - - - - - - - end Bottom Sidebar - - - - - - - - - - - - - - - -->	
+			<h3>Empowerment and Mentorship</h3>
+
+			<p>
+				Providing mentorship and
+				practical training that empowers participants to lead effectively,
+				instilling confidence to enact change in their ministries and
+				communities
+			</p>
+
+		</div>
+
+		<div class="sixteen columns">
+
+			<h3>Community Impact:</h3>
+
+			<p>
+				Encouraging leaders to implement
+				initiatives that reflect the love and grace of Christ, transforming their
+				communities through acts of service and outreach.
+			</p>
+
+		</div>
+
+		<div class="sixteen columns">
+
+			<h3>Collaboration and Support: </h3>
+
+			<p>
+				Building a supportive network
+				of ministry leaders who collaborate, share resources, and encourage
+				one another in their journeys of faith and leadership.
+				Through GOSIM, we are dedicated to raising leaders who are not only
+				knowledgeable about the Finished Work of Christ but are also
+				passionate about living out that truth in their ministries and
+				communities, bringing about lasting transformation.
+
+			</p>
+
+		</div>
+
+		<!-- - - - - - - - - - - - - end Bottom Sidebar - - - - - - - - - - - - - - - -->
 
 	</section>
 	<!--/ .main -->
 
-	<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->		
-	 
-	
-	
+	<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->
 
 
 
-		
-	
-		<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->	
-	
-		<footer id="footer">
-		
-			<div class="container clearfix">
-				
-				<div class="four columns">
-					
-					<div class="widget widget_text">
-	
-						<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
-	
-						<div class="textwidget">
-	
-							<!-- <h1>
+
+
+
+
+
+	<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+
+	<footer id="footer">
+
+		<div class="container clearfix">
+
+			<div class="four columns">
+
+				<div class="widget widget_text">
+
+					<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
+
+					<div class="textwidget">
+
+						<!-- <h1>
 								The Gathering of Sons in Ministry (GOSIM)
 							</h1>
 							 -->
-						</div><!--/ .textwidget-->
-	
-					</div><!--/ .widget-->
-					
-					<div class="widget widget_contacts">
-						
-						<div class="vcard">
-							<span class="contact street-address">Address: Panama City, Panama </span>
-							<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
-							<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>						
-						</div><!--/ .vcard-->
-						
-					</div><!--/ .widget-->
-					
-					 <div class="widget widget_social">
-						 
-						<ul class="social-icons clearfix">
-							<li class="twitter"><a href="#">Twitter<span></span></a></li>
-							<li class="facebook"><a href="#">Facebook<span></span></a></li>
-							<li class="dribble"><a href="#">Dribble<span></span></a></li>
-							<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
-							<li class="rss"><a href="#">Rss<span></span></a></li>
-						</ul><!--/ .social-icons-->				   
-						 
-					 </div><!--/ .widget-->
-					
-				</div><!--/ .four-->
-				
-				<!-- <div class="four columns">
+					</div>
+					<!--/ .textwidget-->
+
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_contacts">
+
+					<div class="vcard">
+						<span class="contact street-address">Address: Panama City, Panama </span>
+						<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
+						<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>
+					</div>
+					<!--/ .vcard-->
+
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_social">
+
+					<ul class="social-icons clearfix">
+						<li class="twitter"><a href="#">Twitter<span></span></a></li>
+						<li class="facebook"><a href="#">Facebook<span></span></a></li>
+						<li class="dribble"><a href="#">Dribble<span></span></a></li>
+						<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
+						<li class="rss"><a href="#">Rss<span></span></a></li>
+					</ul>
+					<!--/ .social-icons-->
+
+				</div>
+				<!--/ .widget-->
+
+			</div>
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 					
 					<div class="widget widget_recent_entries">
 	
@@ -608,9 +648,9 @@
 					</div>
 				 
 				</div> -->
-				<!--/ .four-->
-				
-				<!-- <div class="four columns">
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 					
 					<div class="widget widget_nav_menu">
 	
@@ -629,9 +669,9 @@
 					</div>			
 					
 				</div> -->
-				<!--/ .four-->
-				
-				<!-- <div class="four columns">
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 					
 					<div class="widget widget_contact_form">
 	
@@ -659,51 +699,54 @@
 					</div>			
 					
 				</div> -->
-				<!--/ .four-->
-				
-			</div><!--/ .container-->
-			
-		</footer><!--/ #footer-->
-		
-		<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->	
-		
-		<!-- - - - - - - - - - - - - Bottom Footer - - - - - - - - - - - - - - -->	
-		
-		<footer id="bottom-footer" class="clearfix">
-			
-			<div class="container">
-				
-				<div class="copyright">Copyright © <span id="currentYear"></span> · Gosim-Summit · All rights reserved</div>
-	
-				<script>
-					// Get the current year
-					const currentYear = new Date().getFullYear();
-					
-					// Insert the current year into the span element
-					document.getElementById('currentYear').textContent = currentYear;
-				</script>			
-			</div><!--/ .container-->
-			
-		</footer><!--/ #bottom-footer-->
-		
-		<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->		
-	
+			<!--/ .four-->
+
+		</div>
+		<!--/ .container-->
+
+	</footer>
+	<!--/ #footer-->
+
+	<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - Bottom Footer - - - - - - - - - - - - - - -->
+
+	<footer id="bottom-footer" class="clearfix">
+
+		<div class="container">
+
+			<div class="copyright">Copyright © <span id="currentYear"></span> · Gosim-Summit · All rights reserved</div>
+
+			<script>
+				// Get the current year
+				const currentYear = new Date().getFullYear();
+
+				// Insert the current year into the span element
+				document.getElementById('currentYear').textContent = currentYear;
+			</script>
+		</div>
+		<!--/ .container-->
+
+	</footer>
+	<!--/ #bottom-footer-->
+
+	<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->
+
 	<!-- GET JQUERY FROM THE GOOGLE APIS -->
 	<script src="jquery/1.8/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="js/selectivizr-and-extra-selectors.min.js"></script>
 	<![endif]-->
 	<script src="js/respond.min.js"></script>
-	 <!-- JQUERY KENBURN SLIDER  -->	
-<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>			
-<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>	
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.cycle.all.min.js"></script>
-<script src="js/mediaelement-and-player.min.js"></script>
-<script src="fancybox/jquery.fancybox.pack.js"></script>
-<script src="js/custom.js"></script>
-<!-- <script src="changer/js/changer.js"></script> -->
+	<!-- JQUERY KENBURN SLIDER  -->
+	<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.cycle.all.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script src="changer/js/changer.js"></script> -->
 </body>
-	
-	</html>
-	
+
+</html>

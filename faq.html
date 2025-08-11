@@ -2,14 +2,19 @@
 <!--[if IE 7]>					<html class="ie7 no-js" lang="en">     <![endif]-->
 <!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
 <!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
+	<link
+		href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu'
+		rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<title>Gosim-Summit | FAQ</title>
-	
+
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut" href="images/favicon.html" />
@@ -18,93 +23,96 @@
 	<link rel="stylesheet" href="css/style.css" media="screen" />
 	<link rel="stylesheet" href="css/mediaelementplayer.css" media="screen" />
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
-	
+
 	<!-- REVOLUTION BANNER CSS SETTINGS -->
-	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />	
-	
+	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+
 	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
 	<script type="text/javascript" src="js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="/js/audio.js"> </script>
 
 </head>
+
 <body class="color-1 h-style-1 text-1">
-	
-	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->	
-	
+
+	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
 	<header id="header">
-		
+
 		<div class="container">
-			
-			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->	
-			
+
+			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->
+
 			<a href="index.html" id="logo">
-		<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;"/>		
+				<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;" />
 				<!-- <h1>Blessing</h1> -->
-			</a><!--/ #logo-->	
-			
+			</a>
+			<!--/ #logo-->
+
 			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
-			
-			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->	
-			
+
+			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->
+
 			<div class="event-holder clearfix">
 				<!-- <b>next event in:</b> -->
-			<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Jul 14, 2025 00:00:00").getTime();
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Jul 6, 2026 00:00:00").getTime();
 
-				// Update the count down every 1 second
-				var x = setInterval(function() {
+					// Update the count down every 1 second
+					var x = setInterval(function () {
 
-					// Get today's date and time
-					var now = new Date().getTime();
+						// Get today's date and time
+						var now = new Date().getTime();
 
-					// Find the distance between now and the count down date
-					var distance = countDownDate - now;
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
 
-					// Time calculations for days, hours, minutes and seconds
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					// Display the result in the elements
-					document.getElementById("days").innerHTML = days;
-					document.getElementById("hours").innerHTML = hours;
-					document.getElementById("minutes").innerHTML = minutes;
-					document.getElementById("seconds").innerHTML = seconds;
+						// Display the result in the elements
+						document.getElementById("days").innerHTML = days;
+						document.getElementById("hours").innerHTML = hours;
+						document.getElementById("minutes").innerHTML = minutes;
+						document.getElementById("seconds").innerHTML = seconds;
 
-					// If the count down is over, write some text 
-					if (distance < 0) {
-						clearInterval(x);
-						document.getElementById("days").innerHTML = "0";
-						document.getElementById("hours").innerHTML = "0";
-						document.getElementById("minutes").innerHTML = "0";
-						document.getElementById("seconds").innerHTML = "0";
-					}
-				}, 1000);
-			</script>
-			<span id="days" class="event-numbers">05</span>
-			<span class="event-text">days</span>
-			<span id="hours" class="event-numbers">07</span>
-			<span class="event-text">hr</span>
-			<span id="minutes" class="event-numbers">25</span>
-			<span class="event-text">min</span>
-			<span id="seconds" class="event-numbers">35</span>
-			<span class="event-text">sec</span>
-			</div><!--/ .event-holder-->
-			
-			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->	
-			
+						// If the count down is over, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("days").innerHTML = "0";
+							document.getElementById("hours").innerHTML = "0";
+							document.getElementById("minutes").innerHTML = "0";
+							document.getElementById("seconds").innerHTML = "0";
+						}
+					}, 1000);
+				</script>
+				<span id="days" class="event-numbers">05</span>
+				<span class="event-text">days</span>
+				<span id="hours" class="event-numbers">07</span>
+				<span class="event-text">hr</span>
+				<span id="minutes" class="event-numbers">25</span>
+				<span class="event-text">min</span>
+				<span id="seconds" class="event-numbers">35</span>
+				<span class="event-text">sec</span>
+			</div>
+			<!--/ .event-holder-->
+
+			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
+
 			<div class="clear"></div>
-			
-			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->	
+
+			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->
 
 			<nav id="navigation" class="navigation clearfix">
 
 				<ul class="clearfix">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about-us.html">About Us</a></li>
-          <!-- <li><a href="summit-information.html">Summit Information</a></li> -->
+					<!-- <li><a href="summit-information.html">Summit Information</a></li> -->
 					<li><a href="registration.html">Register</a></li>
 					<li><a href="volunteer.html">Volunteer</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
@@ -112,69 +120,77 @@
 					<li><a href="donate.html">Donate</a></li>
 					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
-				
-			</nav><!--/ #navigation-->
 
-			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->	
-			
-		</div><!--/ .container-->
-		
-	</header><!--/ #header-->
-	
-	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->	
-	
-	<!-- - - - - - - - - - - - - - Page Header - - - - - - - - - - - - - - - -->		
-	
+			</nav>
+			<!--/ #navigation-->
+
+			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->
+
+		</div>
+		<!--/ .container-->
+
+	</header>
+	<!--/ #header-->
+
+	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - - Page Header - - - - - - - - - - - - - - - -->
+
 	<section class="page-header">
-		
-		<div class="container">
-			
-			<h1>Frequently Asked Questions</h1>
-			
-		</div><!--/ .container-->
-		
-	</section><!--/ .page-header-->
-	
-	<!-- - - - - - - - - - - - - end Page Header - - - - - - - - - - - - - - -->	
 
-	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->		
-		
-	<section class="main container sbr clearfix">	
-		
-		<!-- - - - - - - - - - Breadcrumbs - - - - - - - - - - - - -->		
-		
+		<div class="container">
+
+			<h1>Frequently Asked Questions</h1>
+
+		</div>
+		<!--/ .container-->
+
+	</section>
+	<!--/ .page-header-->
+
+	<!-- - - - - - - - - - - - - end Page Header - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->
+
+	<section class="main container sbr clearfix">
+
+		<!-- - - - - - - - - - Breadcrumbs - - - - - - - - - - - - -->
+
 		<div class="breadcrumbs">
 
 			<a title="Home" href="index.html">Home</a>
 			<span>FAQ</span>
 
-		</div><!--/ .breadcrumbs-->	
-		
-		<!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->	
-		
+		</div>
+		<!--/ .breadcrumbs-->
+
+		<!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->
+
 		<!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
-		 
+
 		<section id="content" class="ten columns">
-			
-				
+
+
 			<!-- - - - - - - - - - - Toggle - - - - - - - - - - - -->
-			
+
 			<div class="box-toggle">
 
 				<span class="trigger">When does the GOSIM Summit take place?</span>
 
 				<div class="toggle-container">
-					
-					<p>
-						The GOSIM Summit is held annually. The specific dates for each year’s event will be announced in advance, 
-						so be sure to check our website for updates.
- 
-					</p>
-					
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+					<p>
+						The GOSIM Summit is held annually. The specific dates for each year’s event will be announced in advance,
+						so be sure to check our website for updates.
+
+					</p>
+
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">Who can attend the GOSIM Summit?</span>
@@ -182,62 +198,72 @@
 				<div class="toggle-container">
 
 					<p>
-						The summit is open to anyone in ministry who desires to grow in the revelation of Jesus Christ. Whether you are a pastor, 
-						church leader, or someone involved in ministry work, you are welcome to join us.					
+						The summit is open to anyone in ministry who desires to grow in the revelation of Jesus Christ. Whether you
+						are a pastor,
+						church leader, or someone involved in ministry work, you are welcome to join us.
 					</p>
-					
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">Are there any fees associated with attending the summit?</span>
 
 				<div class="toggle-container">
-					
-					<p>
-						There are no registration fees for the GOSIM Summit. However, 
-						attendees are responsible for their own hotel accommodations and any personal expenses related to 
-						activities outside of the event.
-						
-					</p>
-					
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+					<p>
+						There are no registration fees for the GOSIM Summit. However,
+						attendees are responsible for their own hotel accommodations and any personal expenses related to
+						activities outside of the event.
+
+					</p>
+
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">Can children attend the summit?</span>
 
 				<div class="toggle-container">
-					
-					<p>
-						Yes, children are welcome to attend the GOSIM Summit. However, parents are responsible for arranging childcare for their
-						 children during the event.
-							
-					</p>
-					
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+					<p>
+						Yes, children are welcome to attend the GOSIM Summit. However, parents are responsible for arranging
+						childcare for their
+						children during the event.
+
+					</p>
+
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">What should I do if I have further questions about the summit?</span>
 
 				<div class="toggle-container">
-					
-					<p>
-						If you have any additional questions or need more information, 
-						please feel free to contact our support team through the contact form on our website. We’re here to help!
-							
-					</p>
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+					<p>
+						If you have any additional questions or need more information,
+						please feel free to contact our support team through the contact form on our website. We’re here to help!
+
+					</p>
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">Will there be food provided during the summit?</span>
@@ -245,47 +271,53 @@
 				<div class="toggle-container">
 
 					<p>
-						Refreshments will be provided at the summit, but please note that meals will not be included. 
+						Refreshments will be provided at the summit, but please note that meals will not be included.
 						We encourage attendees to explore local dining options for their meals.
- 							
-					</p>
-					
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+					</p>
+
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">Is there a schedule available for the summit?</span>
 
 				<div class="toggle-container">
-					
-					<p>
-						Yes, a detailed schedule of events, including speakers and sessions, 
-						will be provided on our website prior to the summit. 
-						Be sure to check back for updates!	
-					</p>
-					
-				</div><!--/ .toggle-container--> 
 
-			</div><!--/ .box-toggle-->
-			
+					<p>
+						Yes, a detailed schedule of events, including speakers and sessions,
+						will be provided on our website prior to the summit.
+						Be sure to check back for updates!
+					</p>
+
+				</div>
+				<!--/ .toggle-container-->
+
+			</div>
+			<!--/ .box-toggle-->
+
 			<div class="box-toggle">
 
 				<span class="trigger">Can I volunteer at the summit?</span>
 
 				<div class="toggle-container">
-					
+
 					<p>
-						Yes! We welcome volunteers who are interested in helping out at the summit. 
+						Yes! We welcome volunteers who are interested in helping out at the summit.
 						Please visit our website for more information on volunteer opportunities.
- 							
+
 					</p>
 
 
-				</div><!--/ .toggle-container--> 
+				</div>
+				<!--/ .toggle-container-->
 
-			</div><!--/ .box-toggle-->
+			</div>
+			<!--/ .box-toggle-->
 
 
 			<div class="box-toggle">
@@ -293,79 +325,90 @@
 				<span class="trigger">How can I stay updated on future summits?</span>
 
 				<div class="toggle-container">
-					
+
 					<p>
-						To stay informed about future GOSIM Summits and other events, 
+						To stay informed about future GOSIM Summits and other events,
 						please subscribe to our newsletter on our website or follow us on our social media channels.
 					</p>
 
 
-				</div><!--/ .toggle-container--> 
+				</div>
+				<!--/ .toggle-container-->
 
-			</div><!--/ .box-toggle-->
+			</div>
+			<!--/ .box-toggle-->
 
 			<!-- - - - - - - - - - end Toggle - - - - - - - - - - -->
-			
-			
-		</section><!--/ #content-->
-		
+
+
+		</section>
+		<!--/ #content-->
+
 		<!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
-		
-			
-	
-			
-	</section><!--/ .main -->
 
-	<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->			
-		
-	
-	<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->	
-	
-<footer id="footer">
-		
-	<div class="container clearfix">
-		
-		<div class="four columns">
-			
-			<div class="widget widget_text">
 
-				<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
 
-				<div class="textwidget">
 
-					<!-- <h1>
+	</section>
+	<!--/ .main -->
+
+	<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->
+
+
+	<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+
+	<footer id="footer">
+
+		<div class="container clearfix">
+
+			<div class="four columns">
+
+				<div class="widget widget_text">
+
+					<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
+
+					<div class="textwidget">
+
+						<!-- <h1>
 						The Gathering of Sons in Ministry (GOSIM)
 					</h1>
 					 -->
-				</div><!--/ .textwidget-->
+					</div>
+					<!--/ .textwidget-->
 
-			</div><!--/ .widget-->
-			
-			<div class="widget widget_contacts">
-				
-				<div class="vcard">
-					<span class="contact street-address">Address: Panama City, Panama </span>
-					<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
-					<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>						
-				</div><!--/ .vcard-->
-				
-			</div><!--/ .widget-->
-			
-			 <div class="widget widget_social">
-				 
-				<ul class="social-icons clearfix">
-					<li class="twitter"><a href="#">Twitter<span></span></a></li>
-					<li class="facebook"><a href="#">Facebook<span></span></a></li>
-					<li class="dribble"><a href="#">Dribble<span></span></a></li>
-					<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
-					<li class="rss"><a href="#">Rss<span></span></a></li>
-				</ul><!--/ .social-icons-->				   
-				 
-			 </div><!--/ .widget-->
-			
-		</div><!--/ .four-->
-		
-		<!-- <div class="four columns">
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_contacts">
+
+					<div class="vcard">
+						<span class="contact street-address">Address: Panama City, Panama </span>
+						<!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
+						<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>
+					</div>
+					<!--/ .vcard-->
+
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_social">
+
+					<ul class="social-icons clearfix">
+						<li class="twitter"><a href="#">Twitter<span></span></a></li>
+						<li class="facebook"><a href="#">Facebook<span></span></a></li>
+						<li class="dribble"><a href="#">Dribble<span></span></a></li>
+						<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
+						<li class="rss"><a href="#">Rss<span></span></a></li>
+					</ul>
+					<!--/ .social-icons-->
+
+				</div>
+				<!--/ .widget-->
+
+			</div>
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 			
 			<div class="widget widget_recent_entries">
 
@@ -404,9 +447,9 @@
 			</div>
 		 
 		</div> -->
-		<!--/ .four-->
-		
-		<!-- <div class="four columns">
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 			
 			<div class="widget widget_nav_menu">
 
@@ -425,9 +468,9 @@
 			</div>			
 			
 		</div> -->
-		<!--/ .four-->
-		
-		<!-- <div class="four columns">
+			<!--/ .four-->
+
+			<!-- <div class="four columns">
 			
 			<div class="widget widget_contact_form">
 
@@ -455,26 +498,28 @@
 			</div>			
 			
 		</div> -->
-		<!--/ .four-->
-		
-	</div><!--/ .container-->
-	
-</footer><!--/ #footer-->
+			<!--/ .four-->
 
-<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->	
+		</div>
+		<!--/ .container-->
 
-<!-- GET JQUERY FROM THE GOOGLE APIS -->
-<script src="jquery/1.8/jquery.min.js"></script>
-<!--[if lt IE 9]>
+	</footer>
+	<!--/ #footer-->
+
+	<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
+
+	<!-- GET JQUERY FROM THE GOOGLE APIS -->
+	<script src="jquery/1.8/jquery.min.js"></script>
+	<!--[if lt IE 9]>
 	<script src="js/selectivizr-and-extra-selectors.min.js"></script>
 <![endif]-->
-<script src="js/respond.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.cycle.all.min.js"></script>
-<script src="js/mediaelement-and-player.min.js"></script>
-<script src="fancybox/jquery.fancybox.pack.js"></script>
-<script src="js/custom.js"></script>
-<!-- <script src="changer/js/changer.js"></script> -->
+	<script src="js/respond.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.cycle.all.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script src="changer/js/changer.js"></script> -->
 </body>
 
 </html>

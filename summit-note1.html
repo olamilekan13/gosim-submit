@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if IE 7]>					<html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <link
+    href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu'
+    rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Gosim-Summit | Summit Note</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut" href="images/favicon.html" />
+
+  <link rel="stylesheet" href="css/skeleton.css" media="screen" />
+  <link rel="stylesheet" href="css/style.css" media="screen" />
+  <link rel="stylesheet" href="css/mediaelementplayer.css" media="screen" />
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
+
+  <!-- REVOLUTION BANNER CSS SETTINGS -->
+  <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+
+  <!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="/js/audio.js"> </script>
+  <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+  <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css" />
+
+
+</head>
+
+<body class="color-1 h-style-1 text-1">
+
+  <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
+  <header id="header">
+
+    <div class="container">
+
+      <!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->
+
+      <a href="index.html" id="logo">
+        <img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;" />
+        <!-- <h1>Blessing</h1> -->
+      </a>
+      <!--/ #logo-->
+
+      <!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
+
+      <!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->
+
+      <div class="event-holder clearfix">
+        <!-- <b>next event in:</b> -->
+        <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jul 6, 2026 00:00:00").getTime();
+
+          // Update the count down every 1 second
+          var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the elements
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("days").innerHTML = "0";
+              document.getElementById("hours").innerHTML = "0";
+              document.getElementById("minutes").innerHTML = "0";
+              document.getElementById("seconds").innerHTML = "0";
+            }
+          }, 1000);
+        </script>
+        <span id="days" class="event-numbers">05</span>
+        <span class="event-text">days</span>
+        <span id="hours" class="event-numbers">07</span>
+        <span class="event-text">hr</span>
+        <span id="minutes" class="event-numbers">25</span>
+        <span class="event-text">min</span>
+        <span id="seconds" class="event-numbers">35</span>
+        <span class="event-text">sec</span>
+      </div>
+      <!--/ .event-holder-->
+
+      <!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
+
+      <div class="clear"></div>
+
+      <!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->
+
+      <nav id="navigation" class="navigation clearfix">
+
+        <ul class="clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li class="current-menu-item"><a href="extra-note.html">Summit Note</a></li>
+          <li><a href="summit-information.html">Summit Information</a></li>
+          <li><a href="registration.html">Register</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <!-- <li><a href="gallery.html">Gallery</a></li> -->
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+
+      </nav>
+      <!--/ #navigation-->
+
+      <!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->
+
+    </div>
+    <!--/ .container-->
+
+  </header>
+  <!--/ #header-->
+
+  <!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - - Page Header - - - - - - - - - - - - - - - -->
+
+  <section class="page-header">
+
+    <div class="container">
+
+      <h1>Summit Note</h1>
+
+    </div>
+    <!--/ .container-->
+
+  </section>
+  <!--/ .page-header-->
+
+  <!-- - - - - - - - - - - - - end Page Header - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->
+
+  <section class="main container sbr clearfix">
+
+    <!-- - - - - - - - - - Breadcrumbs - - - - - - - - - - - - -->
+
+    <div class="breadcrumbs">
+
+      <a title="Home" href="index.html">Home</a>
+      <span>Summit Note</span>
+
+    </div>
+    <!--/ .breadcrumbs-->
+
+    <!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->
+
+    <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+
+    <section id="content" class="ten columns">
+
+
+
+
+      <!-- ***************************************** -->
+
+      <!-- <div class="divider-top"><a href="#">Back to Top</a></div> -->
+      <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=http://127.0.0.1:5501/gosim_pics/summernote.pptx"
+        width="100%" height="600px" frameborder="0">
+      </iframe>
+
+
+
+      <!-- <div class="bordered alignleft">
+				<figure class="add-border">
+					<a class="single-image" href="#"><img src="images/temp/sample.jpg" alt="" /></a>
+				</figure>
+			</div> -->
+      <!--/ .bordered-->
+
+      <!-- <p>
+				We are thrilled to welcome you to the official website of the Gathering of Sons in Ministry (GOSIM)! Each year, we come together for a powerful 
+        summit dedicated to deepening our understanding of Christ-centered messages and providing practical support for effective ministry. 
+			</p>
+			
+             <p>
+              GOSIM, we believe that ministry is not just a calling but a journey of growth, learning, and fellowship. 
+              This summit is designed to equip you with profound insights, biblical teachings, and practical tools that you can implement in your ministry. Together, 
+              we will explore the depths of God’s Word and discover how to effectively reach and serve our communities.
+			 </p> -->
+
+      <!-- <div class="bordered alignright">
+				<figure class="add-border">
+					<a class="single-image" href="#"><img src="gosim_pics/img2.jpg" alt="" /></a>
+				</figure>
+			</div> -->
+      <!--/ .bordered-->
+
+      <!-- <p>
+				Join us as we engage in meaningful discussions, participate in enriching workshops, and
+         connect with fellow pastors and leaders who share your passion for serving Christ. 
+         Our time together will be filled with inspiration, encouragement, and the opportunity to forge lasting relationships 
+         within the body of Christ.
+
+			</p> -->
+
+      <!-- <p>
+              We invite you to explore our website for more information about the upcoming summit, including dates, 
+              location, speaker line-up, and registration details.
+
+              <b> <br>Thank you for being a part of this incredible journey. We look forward to gathering with you soon!</b>
+              
+              <b><br> GOSIM Team</b>
+            </p> -->
+
+      <!-- <h1>Mission Focus:</h1>
+            <p>
+              Pastor Akinmola’s mission work emphasizes spiritual growth and 
+              empowerment. He leads initiatives that establish church networks and 
+              support indigenous leaders. His collaborations with local churches and 
+              organizations equip communities to thrive and foster unity among 
+              them.
+            </p> -->
+
+      <!-- <h1>Impact in Southeast Asia:</h1>
+
+            <p>
+              In Southeast Asia, Pastor Akinmola has played a crucial role in 
+              building strong church networks and training local pastors. His efforts 
+              promote collaboration among churches, empowering them to address 
+              the spiritual and practical needs of their communities.
+            </p> -->
+
+      <!-- 
+            <h1>Impact in Africa:
+            </h1>
+
+            <p>
+              In Africa, Pastor Akinmola focuses on empowering local leaders and 
+              fostering sustainable development. His mission trips equip 
+              communities with the tools they need to thrive, emphasizing selfsufficiency and spiritual growth.        
+            </p> -->
+
+
+      <!-- <h1>Gathering of Sons in Ministry (GOSIM):</h1>
+
+            <p>
+              Pastor Akinmola is passionate about mentoring the next generation of 
+              leaders in ministry. GOSIM began as an annual event where he shares 
+              practical insights and guidance with emerging ministers. This initiative 
+              reflects his commitment to seeing his sons and daughters in ministry 
+              grow and succee
+            </p>
+
+
+            <h1>Public Speaking and Advocacy:</h1>
+
+            <p>
+              As a sought-after speaker at conferences and seminars, Pastor 
+            Akinmola shares his insights on global missions and the importance of 
+            cultural sensitivity. His compelling storytelling and passionate 
+            advocacy resonate with audiences, motivating many to participate in 
+            mission work.
+            </p>
+
+            <h1>Personal Life:</h1>
+            <p>
+              Pastor Akinmola is married to Sharon Akinmola, and together they are 
+              dedicated to raising generations of great leaders. Their partnership in 
+              ministry and life exemplifies their shared commitment to nurturing 
+              and empowering the next generation.
+            </p>
+
+
+            <h1>Conclusion:</h1>
+            <p>
+              Pastor Bank Akinmola is a distinguished apostle and an influential 
+              leader within the Christian community. His dedication to nurturing and 
+              empowering others reflects his deep commitment to the advancement 
+              of the church and the growth of its leaders. Through his visionary 
+              leadership, he inspires countless individuals to pursue their calling and 
+              fulfill their potential in ministr
+            </p> -->
+
+      <div class="divider-top"><a href="#">Back to Top</a></div>
+
+
+
+    </section>
+    <!--/ #content-->
+
+    <!-- - - - - - - - - - - - - end Content - - - - - - - - - - - - - - - -->
+
+
+
+
+  </section>
+  <!--/ .main -->
+
+  <!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->
+
+
+  <!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+
+  <footer id="footer">
+
+    <div class="container clearfix">
+
+      <div class="four columns">
+
+        <div class="widget widget_text">
+
+          <h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
+
+          <div class="textwidget">
+
+            <!-- <h1>
+            The Gathering of Sons in Ministry (GOSIM)
+          </h1>
+           -->
+          </div>
+          <!--/ .textwidget-->
+
+        </div>
+        <!--/ .widget-->
+
+        <div class="widget widget_contacts">
+
+          <div class="vcard">
+            <span class="contact street-address">Address: Panama City, Panama </span>
+            <!-- <span class="contact tel">Phone:  +1 800 123 4567</span> -->
+            <span class="contact email">E-mail: Info@GOSIM-Summit.org</span>
+          </div>
+          <!--/ .vcard-->
+
+        </div>
+        <!--/ .widget-->
+
+        <div class="widget widget_social">
+
+          <ul class="social-icons clearfix">
+            <li class="twitter"><a href="#">Twitter<span></span></a></li>
+            <li class="facebook"><a href="#">Facebook<span></span></a></li>
+            <li class="dribble"><a href="#">Dribble<span></span></a></li>
+            <li class="vimeo"><a href="#">Vimeo<span></span></a></li>
+            <li class="rss"><a href="#">Rss<span></span></a></li>
+          </ul>
+          <!--/ .social-icons-->
+
+        </div>
+        <!--/ .widget-->
+
+      </div>
+      <!--/ .four-->
+
+      <!-- <div class="four columns">
+      
+      <div class="widget widget_recent_entries">
+
+        <h3 class="widget-title">Recent Posts</h3>
+
+        <ul>
+          <li>
+            <div class="bordered alignleft">
+              <figure class="add-border">
+                <a class="single-image" href="#"><img src="images/temp/recent-img-4.jpg" alt="" /></a>
+              </figure>
+            </div>
+            <h6><a href="#">Conseq uuntur magn</a></h6>
+            <div class="entry-meta">Sep, 15,  <a href="#">2 Comments</a></div>
+          </li>
+          <li>
+            <div class="bordered alignleft">
+              <figure class="add-border">
+                <a class="single-image" href="#"><img src="images/temp/recent-img-5.jpg" alt="" /></a>
+              </figure>
+            </div>
+            <h6><a href="#">Gravida eget metus</a></h6>
+            <div class="entry-meta">Sep, 15,  <a href="#">2 Comments</a></div>
+          </li>
+          <li>
+            <div class="bordered alignleft">
+              <figure class="add-border">
+                <a class="single-image" href="#"><img src="images/temp/recent-img-6.jpg" alt="" /></a>
+              </figure>
+            </div>
+            <h6><a href="#">Nulla vitae elit libero</a></h6>
+            <div class="entry-meta">Sep, 15,  <a href="#">2 Comments</a></div>
+          </li>
+        </ul>
+
+      </div>
+     
+    </div> -->
+      <!--/ .four-->
+
+      <!-- <div class="four columns">
+      
+      <div class="widget widget_nav_menu">
+
+        <h3 class="widget-title">Theme Features</h3>
+
+        <ul>
+          <li><a href="#">Responsive Design</a></li>
+          <li><a href="#">HTML5 &AMP; CSS3</a></li>
+          <li><a href="#">Google Fonts</a></li>
+          <li><a href="#">Unique &AMP; Clean Design</a></li>
+          <li><a href="#">Amazing Customer Support</a></li>
+          <li><a href="#">Flexible Layouts</a></li>
+          <li><a href="#">10 Color Variations</a></li>
+        </ul>
+
+      </div>			
+      
+    </div> -->
+      <!--/ .four-->
+
+      <!-- <div class="four columns">
+      
+      <div class="widget widget_contact_form">
+
+        <h3 class="widget-title">Contact Widget</h3>
+
+        <form action="https://html.webtemplatemasters.com/" method="post">
+          
+          <p class="input-block">
+            <label>Name:</label>
+            <input type="text" />
+          </p>
+          <p class="input-block">
+            <label>E-mail:</label>
+            <input type="text" />
+          </p>
+          <p class="input-block">
+            <label>Message:</label>
+            <textarea></textarea>
+          </p>
+          
+          <p><button class="button default" type="submit">Submit</button></p>
+          
+        </form>
+
+      </div>			
+      
+    </div> -->
+      <!--/ .four-->
+
+    </div>
+    <!--/ .container-->
+
+  </footer>
+  <!--/ #footer-->
+
+  <!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - Bottom Footer - - - - - - - - - - - - - - -->
+
+  <footer id="bottom-footer" class="clearfix">
+
+    <div class="container">
+
+      <div class="copyright">Copyright © <span id="currentYear"></span> · Gosim-Summit · All rights reserved</div>
+
+      <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Insert the current year into the span element
+        document.getElementById('currentYear').textContent = currentYear;
+      </script>
+    </div>
+    <!--/ .container-->
+
+  </footer>
+  <!--/ #bottom-footer-->
+
+  <!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->
+
+  <!-- GET JQUERY FROM THE GOOGLE APIS -->
+  <script src="/jquery/1.8/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+	<script src="js/selectivizr-and-extra-selectors.min.js"></script>
+<![endif]-->
+  <script src="js/respond.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.cycle.all.min.js"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+  <script src="fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- <script src="changer/js/changer.js"></script> -->
+</body>
+
+</html>
