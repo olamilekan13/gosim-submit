@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--[if IE 7]>					<html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<link
+		href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu'
+		rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Gosim-Summit | More Summit Memories</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut" href="images/favicon.html" />
+
+	<link rel="stylesheet" href="css/skeleton.css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" media="screen" />
+	<link rel="stylesheet" href="css/mediaelementplayer.css" media="screen" />
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" />
+
+	<!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+
+	<!-- HTML5 SHIV + DETECT TOUCH EVENTS -->
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="/js/audio.js"> </script>
+
+	<style>
+		/* Modern Gallery Styles */
+		.summit-gallery-container {
+			max-width: 1200px;
+			margin: 40px auto;
+			padding: 0 20px;
+		}
+
+		.gallery-intro {
+			text-align: center;
+			margin-bottom: 40px;
+			color: #666;
+		}
+
+		.gallery-intro h2 {
+			color: #847460;
+			font-size: 32px;
+			margin-bottom: 15px;
+		}
+
+		.gallery-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+			gap: 25px;
+			margin-bottom: 40px;
+		}
+
+		.gallery-item {
+			position: relative;
+			overflow: hidden;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			background: #fff;
+		}
+
+		.gallery-item:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 25px rgba(132, 116, 96, 0.2);
+		}
+
+		.gallery-item img,
+		.gallery-item video {
+			width: 100%;
+			height: 280px;
+			object-fit: cover;
+			display: block;
+			transition: transform 0.3s ease;
+		}
+
+		.gallery-item:hover img,
+		.gallery-item:hover video {
+			transform: scale(1.05);
+		}
+
+		.gallery-item a {
+			display: block;
+			position: relative;
+		}
+
+		.gallery-item a::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(132, 116, 96, 0);
+			transition: background 0.3s ease;
+			z-index: 1;
+		}
+
+		.gallery-item:hover a::before {
+			background: rgba(132, 116, 96, 0.3);
+		}
+
+		.gallery-item a::after {
+			content: '🔍';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0);
+			font-size: 40px;
+			color: white;
+			z-index: 2;
+			transition: transform 0.3s ease;
+		}
+
+		.gallery-item:hover a::after {
+			transform: translate(-50%, -50%) scale(1);
+		}
+
+		.video-item a::after {
+			content: '▶';
+		}
+
+		.gallery-section-title {
+			font-size: 28px;
+			color: #847460;
+			margin: 50px 0 30px 0;
+			padding-bottom: 10px;
+			border-bottom: 3px solid #b6a99a;
+			text-align: center;
+		}
+
+		.back-button {
+			display: inline-block;
+			margin-bottom: 20px;
+			padding: 10px 25px;
+			background-color: #b6a99a;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		.back-button:hover {
+			background-color: #847460;
+			transform: translateX(-5px);
+		}
+
+		@media (max-width: 768px) {
+			.gallery-grid {
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 15px;
+			}
+
+			.gallery-item img,
+			.gallery-item video {
+				height: 200px;
+			}
+
+			.gallery-intro h2 {
+				font-size: 24px;
+			}
+
+			.gallery-section-title {
+				font-size: 22px;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="color-1 h-style-1 text-1">
+
+	<!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+
+	<header id="header">
+
+		<div class="container">
+
+			<!-- - - - - - - - - - - - Logo - - - - - - - - - - - - - -->
+
+			<a href="index.html" id="logo">
+				<img src="/gosim_pics/logo1.jpg" alt="Gosim-Summit" style="width:100px; height: auto;" />
+			</a>
+			<!--/ #logo-->
+
+			<!-- - - - - - - - - - - end Logo - - - - - - - - - - - - -->
+
+			<!-- - - - - - - - - - - - Event Holder - - - - - - - - - - - - - -->
+
+			<div class="event-holder clearfix">
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Jul 6, 2026 00:00:00").getTime();
+
+					// Update the count down every 1 second
+					var x = setInterval(function () {
+
+						// Get today's date and time
+						var now = new Date().getTime();
+
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
+
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+						// Display the result in the elements
+						document.getElementById("days").innerHTML = days;
+						document.getElementById("hours").innerHTML = hours;
+						document.getElementById("minutes").innerHTML = minutes;
+						document.getElementById("seconds").innerHTML = seconds;
+
+						// If the count down is over, write some text
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("days").innerHTML = "0";
+							document.getElementById("hours").innerHTML = "0";
+							document.getElementById("minutes").innerHTML = "0";
+							document.getElementById("seconds").innerHTML = "0";
+						}
+					}, 1000);
+				</script>
+				<span id="days" class="event-numbers">05</span>
+				<span class="event-text">days</span>
+				<span id="hours" class="event-numbers">07</span>
+				<span class="event-text">hr</span>
+				<span id="minutes" class="event-numbers">25</span>
+				<span class="event-text">min</span>
+				<span id="seconds" class="event-numbers">35</span>
+				<span class="event-text">sec</span>
+			</div>
+			<!--/ .event-holder-->
+
+			<!-- - - - - - - - - - - end Event Holder - - - - - - - - - - - - -->
+
+			<div class="clear"></div>
+
+			<!-- - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - -->
+			<nav id="navigation" class="navigation clearfix">
+
+				<ul class="clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="registration.html">Register</a></li>
+					<li><a href="volunteer.html">Volunteer</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li class="current-menu-item"><a href="summit-gallery.html">Summit Gallery</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="donate.html">Donate</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+
+			</nav>
+			<!--/ #navigation-->
+
+			<!-- - - - - - - - - - - - end Navigation - - - - - - - - - - - - - -->
+
+		</div>
+		<!--/ .container-->
+
+	</header>
+	<!--/ #header-->
+
+	<!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - - Page Header - - - - - - - - - - - - - - - -->
+
+	<section class="page-header">
+
+		<div class="container">
+
+			<h1>More Summit Memories</h1>
+
+		</div>
+		<!--/ .container-->
+
+	</section>
+	<!--/ .page-header-->
+
+	<!-- - - - - - - - - - - - - end Page Header - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->
+
+	<section class="main container clearfix">
+
+		<!-- - - - - - - - - - Breadcrumbs - - - - - - - - - - - - -->
+
+		<div class="breadcrumbs">
+			<a title="Home" href="index.html">Home</a>
+			<a title="Summit Gallery" href="summit-gallery.html">Summit Gallery</a>
+			<span>More Memories</span>
+		</div>
+		<!--/ .breadcrumbs-->
+
+		<!-- - - - - - - - - end Breadcrumbs - - - - - - - - - - - -->
+
+		<div class="summit-gallery-container">
+
+			<a href="summit-gallery.html" class="back-button">← Back to Main Gallery</a>
+
+			<div class="gallery-intro">
+				<h2>More Precious Moments from GOSIM 2024</h2>
+				<p>Continue exploring our unforgettable summit experience</p>
+			</div>
+
+			<!-- Images Section -->
+			<h3 class="gallery-section-title">Photo Gallery</h3>
+			<div class="gallery-grid">
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.28 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.28 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.29 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.29 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.29 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.29 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.30 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.30 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.35 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.35 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.35 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.35 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.36 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.36 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.36 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.36 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.36 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.36 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.37 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.37 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM (3).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM (3).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.38 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM (3).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM (3).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.39 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.44 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.44 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.44 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.44 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.44 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.44 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.45 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.45 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.45 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.45 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.45 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.45 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM (3).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM (3).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.46 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (3).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (3).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (4).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (4).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (5).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM (5).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.40.47 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (2).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (2).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (3).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (3).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (4).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (4).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (5).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (5).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (6).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (6).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (7).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (7).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (8).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (8).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (9).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM (9).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.58 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.59 PM (1).jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.59 PM (1).jpeg" alt="Summit Image" />
+					</a>
+				</div>
+				<div class="gallery-item">
+					<a href="summit-images2/WhatsApp Image 2025-12-09 at 5.43.59 PM.jpeg" data-fancybox="gallery">
+						<img src="summit-images2/WhatsApp Image 2025-12-09 at 5.43.59 PM.jpeg" alt="Summit Image" />
+					</a>
+				</div>
+			</div>
+
+			<!-- Videos Section -->
+			<h3 class="gallery-section-title">Video Highlights</h3>
+			<div class="gallery-grid">
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 5.43.45 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 5.43.45 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.43.50 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.43.50 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.43.51 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.43.51 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.43.56 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.43.56 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.43.57 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.43.57 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.43.58 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.43.58 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.43.59 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.43.59 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.44.04 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.44.04 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.44.05 PM (1).mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.44.05 PM (1).mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.44.05 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.44.05 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+				<div class="gallery-item video-item">
+					<a href="summit-images2/WhatsApp Video 2025-12-09 at 10.44.06 PM.mp4" data-fancybox="videos">
+						<video>
+							<source src="summit-images2/WhatsApp Video 2025-12-09 at 10.44.06 PM.mp4" type="video/mp4">
+						</video>
+					</a>
+				</div>
+			</div>
+
+			<!-- Back Button -->
+			<div style="text-align: center; margin: 50px 0;">
+				<a href="summit-gallery.html" class="back-button" style="padding: 15px 40px; font-size: 18px;">
+					← Back to Main Gallery
+				</a>
+			</div>
+
+		</div>
+
+	</section>
+	<!--/ .main -->
+
+	<!-- - - - - - - - - - - - - end Main - - - - - - - - - - - - - - - - -->
+
+
+	<!-- - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - -->
+
+	<footer id="footer">
+
+		<div class="container clearfix">
+
+			<div class="four columns">
+
+				<div class="widget widget_text">
+
+					<h3 class="widget-title">The Gathering of Sons in Ministry (GOSIM)</h3>
+
+					<div class="textwidget">
+					</div>
+					<!--/ .textwidget-->
+
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_contacts">
+
+					<div class="vcard">
+						<span class="contact street-address">Address: Panama City, Panama </span>
+						<span class="contact email">E-mail: Info@GOSIM-Summit.org</span>
+					</div>
+					<!--/ .vcard-->
+
+				</div>
+				<!--/ .widget-->
+
+				<div class="widget widget_social">
+
+					<ul class="social-icons clearfix">
+						<li class="twitter"><a href="#">Twitter<span></span></a></li>
+						<li class="facebook"><a href="#">Facebook<span></span></a></li>
+						<li class="dribble"><a href="#">Dribble<span></span></a></li>
+						<li class="vimeo"><a href="#">Vimeo<span></span></a></li>
+						<li class="rss"><a href="#">Rss<span></span></a></li>
+					</ul>
+					<!--/ .social-icons-->
+
+				</div>
+				<!--/ .widget-->
+
+			</div>
+			<!--/ .four-->
+
+		</div>
+		<!--/ .container-->
+
+	</footer>
+	<!--/ #footer-->
+
+	<!-- - - - - - - - - - - - - - end Footer - - - - - - - - - - - - - - - -->
+
+	<!-- - - - - - - - - - - - - Bottom Footer - - - - - - - - - - - - - - -->
+
+	<footer id="bottom-footer" class="clearfix">
+
+		<div class="container">
+
+			<div class="copyright">Copyright © <span id="currentYear"></span> · Gosim-Summit · All rights reserved</div>
+
+			<script>
+				// Get the current year
+				const currentYear = new Date().getFullYear();
+
+				// Insert the current year into the span element
+				document.getElementById('currentYear').textContent = currentYear;
+			</script>
+		</div>
+		<!--/ .container-->
+
+	</footer>
+	<!--/ #bottom-footer-->
+
+	<!-- - - - - - - - - - - - - end Bottom Footer - - - - - - - - - - - - - -->
+
+	<!-- GET JQUERY FROM THE GOOGLE APIS -->
+	<script src="jquery/1.8/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/selectivizr-and-extra-selectors.min.js"></script>
+	<![endif]-->
+	<script src="js/respond.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.cycle.all.min.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
